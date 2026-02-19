@@ -1,0 +1,2706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Phoebe D. Breillat – Author Visibility & Book Marketing Specialist</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Data-driven book marketing that identifies discovery gaps, optimizes positioning, and connects your book with readers actively searching for stories like yours." />
+<link rel="canonical" href="https://yourdomain.com/" />
+
+<meta property="og:title" content="Phoebe D. Breillat – Author Visibility & Book Marketing" />
+<meta property="og:description" content="Research-driven book marketing. Discovery gap analysis. Reader-centered visibility strategies for authors who want sustainable results." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://yourdomain.com/" />
+<meta property="og:image" content="https://yourdomain.com/images/og-image.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Phoebe D. Breillat – Author Visibility & Book Marketing" />
+<meta name="twitter:description" content="Data-driven book marketing that connects your book with readers actively searching for stories like yours." />
+<meta name="twitter:image" content="https://yourdomain.com/images/og-image.jpg" />
+
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "ProfessionalService",
+"name": "Phoebe D. Breillat - Author Visibility & Book Marketing Specialist",
+"description": "Data-driven book marketing and discovery gap analysis for authors across 15+ genres",
+"email": "dbreillatphoebe@gmail.com",
+"url": "https://yourdomain.com",
+"serviceType": ["Book Marketing", "Author Visibility", "Discovery Gap Analysis"],
+"areaServed": "Worldwide",
+"priceRange": "$$"
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<style>
+:root {
+--bg: #0a0a0f;
+--bg-alt: #0f0f18;
+--bg-card: rgba(255, 255, 255, 0.03);
+--bg-card-hover: rgba(255, 255, 255, 0.06);
+--primary: #e8c56d;
+--primary-dim: rgba(232, 197, 109, 0.12);
+--primary-glow: rgba(232, 197, 109, 0.3);
+--accent: #f0d68a;
+--accent-rose: #e8a0bf;
+--accent-mint: #a0e8c5;
+--accent-blue: #a0c4e8;
+--text-main: #eeeae2;
+--text-muted: #9a9590;
+--text-dim: #6a6560;
+--border: rgba(255, 255, 255, 0.06);
+--border-hover: rgba(232, 197, 109, 0.25);
+--shadow: 0 30px 80px rgba(0, 0, 0, 0.5);
+--radius-lg: 20px;
+--radius-md: 14px;
+--radius-sm: 8px;
+--radius-pill: 999px;
+--transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+--font-body: "Inter", system-ui, -apple-system, sans-serif;
+--font-display: "Playfair Display", Georgia, serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+font-family: var(--font-body);
+background: var(--bg);
+color: var(--text-main);
+line-height: 1.7;
+overflow-x: hidden;
+-webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+ul { list-style: none; }
+
+/* ============================================
+ANIMATED BACKGROUND
+============================================ */
+.page-bg {
+position: fixed;
+inset: 0;
+z-index: 0;
+overflow: hidden;
+pointer-events: none;
+}
+
+.bg-gradient-1 {
+position: absolute;
+width: 800px;
+height: 800px;
+border-radius: 50%;
+background: radial-gradient(circle, rgba(232, 197, 109, 0.06), transparent 70%);
+top: -200px;
+left: -200px;
+animation: bgFloat1 25s ease-in-out infinite;
+}
+
+.bg-gradient-2 {
+position: absolute;
+width: 600px;
+height: 600px;
+border-radius: 50%;
+background: radial-gradient(circle, rgba(232, 160, 191, 0.04), transparent 70%);
+bottom: -100px;
+right: -100px;
+animation: bgFloat2 30s ease-in-out infinite;
+}
+
+.bg-gradient-3 {
+position: absolute;
+width: 500px;
+height: 500px;
+border-radius: 50%;
+background: radial-gradient(circle, rgba(160, 232, 197, 0.03), transparent 70%);
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+animation: bgFloat3 20s ease-in-out infinite;
+}
+
+.bg-grid {
+position: absolute;
+inset: 0;
+background-image:
+linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+linear-gradient(90deg, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+background-size: 60px 60px;
+animation: gridMove 60s linear infinite;
+}
+
+.bg-particles {
+position: absolute;
+inset: 0;
+}
+
+.particle {
+position: absolute;
+width: 2px;
+height: 2px;
+background: rgba(232, 197, 109, 0.3);
+border-radius: 50%;
+animation: particleFloat linear infinite;
+}
+
+@keyframes bgFloat1 {
+0%, 100% { transform: translate(0, 0) scale(1); }
+33% { transform: translate(100px, 50px) scale(1.1); }
+66% { transform: translate(-50px, 100px) scale(0.9); }
+}
+
+@keyframes bgFloat2 {
+0%, 100% { transform: translate(0, 0) scale(1); }
+33% { transform: translate(-80px, -60px) scale(1.15); }
+66% { transform: translate(60px, -30px) scale(0.95); }
+}
+
+@keyframes bgFloat3 {
+0%, 100% { transform: translate(-50%, -50%) scale(1); }
+50% { transform: translate(-50%, -50%) scale(1.2); }
+}
+
+@keyframes gridMove {
+0% { transform: translate(0, 0); }
+100% { transform: translate(60px, 60px); }
+}
+
+@keyframes particleFloat {
+0% { transform: translateY(100vh) scale(0); opacity: 0; }
+10% { opacity: 1; }
+90% { opacity: 1; }
+100% { transform: translateY(-100px) scale(1); opacity: 0; }
+}
+
+/* ============================================
+LAYOUT
+============================================ */
+.container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 2rem;
+position: relative;
+z-index: 1;
+}
+
+section {
+padding: 120px 0;
+position: relative;
+}
+
+/* ============================================
+SECTION DIVIDERS
+============================================ */
+.section-divider {
+width: 60px;
+height: 1px;
+background: linear-gradient(90deg, transparent, var(--primary), transparent);
+margin: 0 auto 3rem;
+}
+
+/* ============================================
+NAVBAR — FIXED (NOT SCROLLING)
+============================================ */
+.navbar {
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+z-index: 1000;
+backdrop-filter: blur(30px) saturate(1.2);
+-webkit-backdrop-filter: blur(30px) saturate(1.2);
+background: rgba(10, 10, 15, 0.85);
+border-bottom: 1px solid var(--border);
+transition: background var(--transition), box-shadow var(--transition);
+}
+
+.navbar.scrolled {
+background: rgba(10, 10, 15, 0.95);
+box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+.navbar-inner {
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 2rem;
+height: 72px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.brand {
+display: flex;
+align-items: center;
+gap: 0.8rem;
+}
+
+.brand-logo {
+width: 40px;
+height: 40px;
+border-radius: 50%;
+overflow: hidden;
+border: 1.5px solid rgba(232, 197, 109, 0.3);
+flex-shrink: 0;
+}
+
+.brand-logo img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.brand-text {
+font-family: var(--font-display);
+font-size: 1.1rem;
+font-weight: 600;
+letter-spacing: 0.02em;
+color: var(--text-main);
+}
+
+.nav-links {
+display: flex;
+align-items: center;
+gap: 2rem;
+}
+
+.nav-links a {
+font-size: 0.88rem;
+font-weight: 400;
+color: var(--text-muted);
+transition: color var(--transition);
+letter-spacing: 0.02em;
+}
+
+.nav-links a:hover {
+color: var(--primary);
+}
+
+.nav-cta {
+padding: 0.6rem 1.5rem;
+border-radius: var(--radius-pill);
+background: var(--primary);
+color: var(--bg) !important;
+font-weight: 600 !important;
+font-size: 0.85rem !important;
+transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.nav-cta:hover {
+transform: translateY(-1px);
+box-shadow: 0 8px 30px var(--primary-glow);
+color: var(--bg) !important;
+}
+
+.hamburger {
+display: none;
+flex-direction: column;
+gap: 5px;
+background: none;
+border: none;
+cursor: pointer;
+padding: 0.5rem;
+z-index: 1001;
+}
+
+.hamburger span {
+width: 22px;
+height: 1.5px;
+background: var(--text-main);
+border-radius: 2px;
+transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+.hamburger.active span:nth-child(2) { opacity: 0; }
+.hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+.nav-overlay {
+display: none;
+position: fixed;
+inset: 0;
+background: rgba(0, 0, 0, 0.6);
+z-index: 999;
+backdrop-filter: blur(4px);
+}
+.nav-overlay.active { display: block; }
+
+/* ============================================
+HERO
+============================================ */
+.hero {
+min-height: 100vh;
+display: flex;
+align-items: center;
+padding-top: 72px; /* Account for fixed navbar */
+position: relative;
+overflow: hidden;
+}
+
+.hero-inner {
+max-width: 1200px;
+margin: 0 auto;
+padding: 4rem 2rem;
+display: grid;
+grid-template-columns: 1.1fr 0.9fr;
+gap: 4rem;
+align-items: center;
+}
+
+.hero-text {
+animation: fadeUp 1s ease-out both;
+}
+
+@keyframes fadeUp {
+from { opacity: 0; transform: translateY(40px); }
+to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+from { opacity: 0; }
+to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+from { opacity: 0; transform: scale(0.9); }
+to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideRight {
+from { opacity: 0; transform: translateX(-30px); }
+to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideLeft {
+from { opacity: 0; transform: translateX(30px); }
+to { opacity: 1; transform: translateX(0); }
+}
+
+.hero-label {
+display: inline-flex;
+align-items: center;
+gap: 0.5rem;
+padding: 0.4rem 1rem;
+border-radius: var(--radius-pill);
+background: var(--primary-dim);
+border: 1px solid rgba(232, 197, 109, 0.15);
+font-size: 0.75rem;
+font-weight: 600;
+text-transform: uppercase;
+letter-spacing: 0.15em;
+color: var(--primary);
+margin-bottom: 1.5rem;
+animation: fadeUp 1s ease-out both 0.1s;
+}
+
+.hero-label .dot {
+width: 6px;
+height: 6px;
+border-radius: 50%;
+background: var(--primary);
+animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+0%, 100% { opacity: 1; transform: scale(1); }
+50% { opacity: 0.5; transform: scale(1.5); }
+}
+
+.hero-title {
+font-family: var(--font-display);
+font-size: 3.8rem;
+line-height: 1.1;
+font-weight: 700;
+margin-bottom: 1.5rem;
+animation: fadeUp 1s ease-out both 0.2s;
+}
+
+.hero-title .highlight {
+background: linear-gradient(135deg, var(--primary), var(--accent-rose));
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+}
+
+.hero-subtitle {
+font-size: 1.05rem;
+color: var(--text-muted);
+max-width: 520px;
+margin-bottom: 1rem;
+animation: fadeUp 1s ease-out both 0.3s;
+}
+
+.hero-trust-line {
+font-size: 0.9rem;
+color: var(--text-dim);
+margin-bottom: 2rem;
+animation: fadeUp 1s ease-out both 0.35s;
+}
+
+.hero-trust-line strong {
+color: var(--primary);
+}
+
+.hero-cta-row {
+display: flex;
+flex-wrap: wrap;
+gap: 1rem;
+align-items: center;
+margin-bottom: 1.5rem;
+animation: fadeUp 1s ease-out both 0.4s;
+}
+
+.btn-gold {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+gap: 0.5rem;
+padding: 1rem 2rem;
+border-radius: var(--radius-pill);
+border: none;
+background: linear-gradient(135deg, var(--primary), #d4a843);
+color: var(--bg);
+font-size: 0.95rem;
+font-weight: 700;
+cursor: pointer;
+text-decoration: none;
+transition: transform var(--transition), box-shadow var(--transition);
+position: relative;
+overflow: hidden;
+}
+
+.btn-gold::before {
+content: "";
+position: absolute;
+top: 0;
+left: -100%;
+width: 100%;
+height: 100%;
+background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+transition: left 0.6s ease;
+}
+
+.btn-gold:hover::before { left: 100%; }
+
+.btn-gold:hover {
+transform: translateY(-2px);
+box-shadow: 0 16px 50px var(--primary-glow);
+}
+
+.btn-ghost {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+gap: 0.5rem;
+padding: 1rem 1.8rem;
+border-radius: var(--radius-pill);
+border: 1px solid var(--border);
+background: transparent;
+color: var(--text-main);
+font-size: 0.92rem;
+font-weight: 500;
+cursor: pointer;
+text-decoration: none;
+transition: all var(--transition);
+}
+
+.btn-ghost:hover {
+border-color: var(--primary);
+color: var(--primary);
+background: var(--primary-dim);
+}
+
+.btn-ghost .arrow {
+transition: transform var(--transition);
+}
+
+.btn-ghost:hover .arrow {
+transform: translateX(4px);
+}
+
+.hero-note {
+font-size: 0.85rem;
+color: var(--text-dim);
+animation: fadeUp 1s ease-out both 0.5s;
+}
+
+/* Hero Visual — Photo Card */
+.hero-visual {
+display: flex;
+justify-content: center;
+animation: scaleIn 1.2s ease-out both 0.3s;
+}
+
+.hero-card {
+position: relative;
+width: 100%;
+max-width: 400px;
+}
+
+.hero-card-inner {
+background: linear-gradient(145deg, rgba(255,255,255,0.04), rgba(255,255,255,0.01));
+border: 1px solid var(--border);
+border-radius: 28px;
+padding: 1.8rem;
+backdrop-filter: blur(10px);
+position: relative;
+z-index: 2;
+}
+
+.hero-card-glow {
+position: absolute;
+inset: -2px;
+border-radius: 30px;
+background: linear-gradient(135deg, rgba(232,197,109,0.15), transparent 40%, transparent 60%, rgba(232,160,191,0.1));
+z-index: 1;
+animation: glowRotate 8s linear infinite;
+}
+
+@keyframes glowRotate {
+0% { filter: hue-rotate(0deg); }
+100% { filter: hue-rotate(360deg); }
+}
+
+.hero-photo-wrapper {
+width: 220px;
+height: 220px;
+margin: 0 auto 1.2rem;
+border-radius: 24px;
+overflow: hidden;
+border: 2px solid rgba(232, 197, 109, 0.2);
+position: relative;
+}
+
+.hero-photo-wrapper img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform 0.6s ease;
+}
+
+.hero-card:hover .hero-photo-wrapper img {
+transform: scale(1.05);
+}
+
+.hero-card-name {
+text-align: center;
+font-family: var(--font-display);
+font-size: 1.15rem;
+font-weight: 600;
+margin-bottom: 0.2rem;
+}
+
+.hero-card-role {
+text-align: center;
+font-size: 0.82rem;
+color: var(--text-muted);
+}
+
+/* Floating tags — positioned to NOT cover the photo */
+.float-tag {
+position: absolute;
+padding: 0.5rem 1rem;
+border-radius: 14px;
+font-size: 0.78rem;
+font-weight: 600;
+z-index: 3;
+backdrop-filter: blur(12px);
+border: 1px solid var(--border);
+animation: floatTag 6s ease-in-out infinite alternate;
+}
+
+.float-tag-1 {
+top: -16px;
+left: -30px;
+background: rgba(10, 10, 15, 0.9);
+color: var(--primary);
+border-color: rgba(232, 197, 109, 0.3);
+}
+
+.float-tag-2 {
+bottom: -16px;
+right: -20px;
+background: linear-gradient(135deg, var(--primary), var(--accent-rose));
+color: var(--bg);
+border: none;
+animation-direction: alternate-reverse;
+}
+
+@keyframes floatTag {
+from { transform: translateY(0); }
+to { transform: translateY(-8px); }
+}
+
+/* ============================================
+STATS BAR
+============================================ */
+.stats-bar {
+border-top: 1px solid var(--border);
+border-bottom: 1px solid var(--border);
+background: rgba(255, 255, 255, 0.01);
+position: relative;
+z-index: 1;
+}
+
+.stats-inner {
+max-width: 1200px;
+margin: 0 auto;
+padding: 1.2rem 2rem;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 2.5rem;
+font-size: 0.9rem;
+color: var(--text-muted);
+}
+
+.stat-item {
+display: flex;
+align-items: center;
+gap: 0.5rem;
+}
+
+.stat-item strong {
+color: var(--primary);
+font-weight: 700;
+}
+
+/* ============================================
+REVEAL ANIMATION
+============================================ */
+.reveal {
+opacity: 0;
+transform: translateY(40px);
+transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.active {
+opacity: 1;
+transform: translateY(0);
+}
+
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+
+/* ============================================
+SECTION HEADERS
+============================================ */
+.section-label {
+display: inline-flex;
+align-items: center;
+gap: 0.5rem;
+padding: 0.3rem 0.9rem;
+border-radius: var(--radius-pill);
+background: var(--primary-dim);
+border: 1px solid rgba(232, 197, 109, 0.1);
+font-size: 0.72rem;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 0.18em;
+color: var(--primary);
+margin-bottom: 1rem;
+}
+
+.section-label-center {
+display: flex;
+justify-content: center;
+}
+
+.section-title {
+font-family: var(--font-display);
+font-size: 2.4rem;
+font-weight: 600;
+line-height: 1.2;
+margin-bottom: 0.8rem;
+}
+
+.section-title-center { text-align: center; }
+
+.section-desc {
+color: var(--text-muted);
+max-width: 640px;
+font-size: 1rem;
+margin-bottom: 3rem;
+}
+
+.section-desc-center {
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+}
+
+/* ============================================
+GLASS CARDS
+============================================ */
+.glass-card {
+background: var(--bg-card);
+border: 1px solid var(--border);
+border-radius: var(--radius-lg);
+padding: 1.8rem;
+transition: all var(--transition);
+position: relative;
+overflow: hidden;
+}
+
+.glass-card::before {
+content: "";
+position: absolute;
+inset: 0;
+background: radial-gradient(circle at top right, rgba(232,197,109,0.06), transparent 60%);
+opacity: 0;
+transition: opacity var(--transition);
+pointer-events: none;
+}
+
+.glass-card:hover {
+border-color: var(--border-hover);
+background: var(--bg-card-hover);
+transform: translateY(-4px);
+}
+
+.glass-card:hover::before {
+opacity: 1;
+}
+
+/* ============================================
+PAIN POINTS
+============================================ */
+.pain-grid {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 1.5rem;
+}
+
+.pain-card .pain-emoji {
+font-size: 1.6rem;
+margin-bottom: 0.8rem;
+display: block;
+}
+
+.pain-card h4 {
+font-family: var(--font-display);
+font-size: 1rem;
+margin-bottom: 0.5rem;
+color: var(--primary);
+font-weight: 500;
+}
+
+.pain-card p {
+font-size: 0.9rem;
+color: var(--text-muted);
+line-height: 1.7;
+}
+
+/* ============================================
+DIAGNOSIS BOX
+============================================ */
+.diagnosis-section {
+background: linear-gradient(180deg, rgba(232,197,109,0.02), transparent);
+}
+
+.diagnosis-box {
+background: linear-gradient(145deg, rgba(255,255,255,0.04), rgba(255,255,255,0.01));
+border: 1px solid var(--border);
+border-radius: 28px;
+padding: 3rem;
+max-width: 900px;
+margin: 0 auto;
+text-align: center;
+position: relative;
+overflow: hidden;
+}
+
+.diagnosis-box::before {
+content: "";
+position: absolute;
+top: 0;
+left: 50%;
+transform: translateX(-50%);
+width: 200px;
+height: 1px;
+background: linear-gradient(90deg, transparent, var(--primary), transparent);
+}
+
+.diagnosis-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+gap: 0.8rem;
+margin: 2rem 0;
+text-align: left;
+}
+
+.diagnosis-item {
+padding: 0.9rem 1rem;
+border-radius: var(--radius-sm);
+background: rgba(0, 0, 0, 0.3);
+border: 1px solid var(--border);
+font-size: 0.85rem;
+color: var(--text-muted);
+transition: border-color var(--transition);
+}
+
+.diagnosis-item:hover {
+border-color: var(--border-hover);
+}
+
+.diagnosis-item strong {
+color: var(--text-main);
+display: block;
+margin-bottom: 0.2rem;
+font-size: 0.88rem;
+}
+
+/* ============================================
+APPROACH
+============================================ */
+.approach-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 1.5rem;
+}
+
+.approach-card .step-num {
+width: 36px;
+height: 36px;
+border-radius: 12px;
+background: var(--primary-dim);
+border: 1px solid rgba(232, 197, 109, 0.15);
+display: flex;
+align-items: center;
+justify-content: center;
+margin-bottom: 1rem;
+color: var(--primary);
+font-size: 0.85rem;
+font-weight: 700;
+}
+
+.approach-card h4 {
+font-family: var(--font-display);
+font-size: 1.05rem;
+margin-bottom: 0.5rem;
+font-weight: 500;
+}
+
+.approach-card p {
+font-size: 0.9rem;
+color: var(--text-muted);
+}
+
+/* ============================================
+ABOUT
+============================================ */
+.about-grid {
+display: grid;
+grid-template-columns: 1.6fr 1fr;
+gap: 4rem;
+align-items: start;
+}
+
+.about-text p {
+color: var(--text-muted);
+margin-bottom: 1rem;
+font-size: 0.95rem;
+}
+
+.about-lists {
+margin-top: 2rem;
+}
+
+.about-lists h4 {
+font-family: var(--font-display);
+font-size: 1.05rem;
+margin-bottom: 0.8rem;
+color: var(--text-main);
+}
+
+.about-lists ul li {
+padding-left: 1.2rem;
+position: relative;
+margin-bottom: 0.4rem;
+font-size: 0.9rem;
+color: var(--text-muted);
+}
+
+.about-lists ul li::before {
+content: "";
+position: absolute;
+left: 0;
+top: 10px;
+width: 4px;
+height: 4px;
+border-radius: 50%;
+background: var(--primary);
+}
+
+.about-photo {
+position: relative;
+}
+
+.about-photo-frame {
+border-radius: var(--radius-lg);
+overflow: hidden;
+border: 1px solid var(--border);
+aspect-ratio: 4/5;
+position: relative;
+}
+
+.about-photo-frame img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.about-photo-accent {
+position: absolute;
+bottom: -20px;
+right: -20px;
+width: 120px;
+height: 120px;
+border-radius: 50%;
+background: radial-gradient(circle, var(--primary-glow), transparent 70%);
+z-index: -1;
+}
+
+/* ============================================
+SIGNATURE SERVICE
+============================================ */
+.signature-section {
+background: linear-gradient(180deg, transparent, rgba(232,197,109,0.02), transparent);
+}
+
+.signature-card {
+background: linear-gradient(145deg, rgba(255,255,255,0.04), rgba(255,255,255,0.01));
+border: 1px solid var(--border);
+border-radius: 28px;
+padding: 3rem;
+display: grid;
+grid-template-columns: 1.6fr 1fr;
+gap: 3rem;
+align-items: start;
+position: relative;
+overflow: hidden;
+}
+
+.signature-card::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+height: 1px;
+background: linear-gradient(90deg, transparent, var(--primary), transparent);
+}
+
+.signature-list {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 0.6rem 1.5rem;
+margin-top: 1.5rem;
+}
+
+.signature-list li {
+padding-left: 1.3rem;
+position: relative;
+font-size: 0.9rem;
+color: var(--text-muted);
+}
+
+.signature-list li::before {
+content: "◆";
+position: absolute;
+left: 0;
+top: 2px;
+font-size: 0.5rem;
+color: var(--primary);
+}
+
+.signature-side {
+background: rgba(0, 0, 0, 0.3);
+border-radius: var(--radius-lg);
+padding: 2rem;
+border: 1px solid var(--border);
+}
+
+.signature-side h4 {
+font-family: var(--font-display);
+font-size: 1.1rem;
+margin-bottom: 0.8rem;
+}
+
+.signature-side p {
+font-size: 0.92rem;
+color: var(--text-muted);
+margin-bottom: 0.6rem;
+}
+
+/* ============================================
+SERVICES
+============================================ */
+.services-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 1.5rem;
+}
+
+.service-card .service-icon {
+width: 48px;
+height: 48px;
+border-radius: 14px;
+background: var(--primary-dim);
+border: 1px solid rgba(232, 197, 109, 0.1);
+display: flex;
+align-items: center;
+justify-content: center;
+margin-bottom: 1rem;
+font-size: 1.3rem;
+}
+
+.service-card .service-title {
+font-family: var(--font-display);
+font-weight: 600;
+font-size: 1.05rem;
+margin-bottom: 0.3rem;
+}
+
+.service-card .service-tag {
+font-size: 0.75rem;
+text-transform: uppercase;
+letter-spacing: 0.12em;
+color: var(--text-dim);
+margin-bottom: 0.8rem;
+}
+
+.service-card .service-body {
+font-size: 0.9rem;
+color: var(--text-muted);
+margin-bottom: 0.8rem;
+}
+
+.service-card .service-list li {
+padding-left: 1rem;
+position: relative;
+margin-bottom: 0.3rem;
+font-size: 0.85rem;
+color: var(--text-dim);
+}
+
+.service-card .service-list li::before {
+content: "–";
+position: absolute;
+left: 0;
+color: var(--primary);
+}
+
+/* ============================================
+RESULTS
+============================================ */
+.results-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 1.5rem;
+}
+
+.result-card .result-genre {
+font-size: 0.72rem;
+text-transform: uppercase;
+letter-spacing: 0.14em;
+color: var(--primary);
+margin-bottom: 0.5rem;
+font-weight: 600;
+}
+
+.result-card .result-title {
+font-family: var(--font-display);
+font-weight: 600;
+font-size: 1.02rem;
+margin-bottom: 0.6rem;
+}
+
+.result-card .result-before {
+font-size: 0.85rem;
+color: var(--accent-rose);
+margin-bottom: 0.4rem;
+padding-left: 0.8rem;
+border-left: 2px solid rgba(232, 160, 191, 0.3);
+}
+
+.result-card .result-after {
+font-size: 0.85rem;
+color: var(--accent-mint);
+margin-bottom: 0.8rem;
+padding-left: 0.8rem;
+border-left: 2px solid rgba(160, 232, 197, 0.3);
+}
+
+.result-metrics {
+display: flex;
+flex-wrap: wrap;
+gap: 0.4rem;
+}
+
+.result-metric {
+padding: 0.25rem 0.7rem;
+border-radius: var(--radius-pill);
+background: var(--primary-dim);
+font-size: 0.78rem;
+color: var(--primary);
+font-weight: 500;
+}
+
+/* ============================================
+CTA BANNER
+============================================ */
+.cta-banner {
+background: linear-gradient(145deg, rgba(232,197,109,0.06), rgba(232,160,191,0.03));
+border: 1px solid rgba(232, 197, 109, 0.15);
+border-radius: 28px;
+padding: 3.5rem 2.5rem;
+text-align: center;
+max-width: 860px;
+margin: 0 auto;
+position: relative;
+overflow: hidden;
+}
+
+.cta-banner::before {
+content: "";
+position: absolute;
+top: 0;
+left: 50%;
+transform: translateX(-50%);
+width: 300px;
+height: 1px;
+background: linear-gradient(90deg, transparent, var(--primary), transparent);
+}
+
+.cta-banner p {
+color: var(--text-muted);
+max-width: 560px;
+margin: 0 auto 1.5rem;
+font-size: 1rem;
+}
+
+/* ============================================
+GENRES
+============================================ */
+.genres-wrap {
+display: flex;
+flex-wrap: wrap;
+gap: 0.5rem;
+justify-content: center;
+}
+
+.genre-tag {
+padding: 0.4rem 0.9rem;
+border-radius: var(--radius-pill);
+background: rgba(255, 255, 255, 0.02);
+border: 1px solid var(--border);
+font-size: 0.8rem;
+color: var(--text-muted);
+transition: all var(--transition);
+cursor: default;
+}
+
+.genre-tag:hover {
+border-color: var(--primary);
+color: var(--primary);
+background: var(--primary-dim);
+}
+
+/* ============================================
+FAQ
+============================================ */
+.faq-grid {
+display: grid;
+grid-template-columns: 1.5fr 1fr;
+gap: 3rem;
+align-items: start;
+}
+
+.faq-item {
+border: 1px solid var(--border);
+border-radius: var(--radius-md);
+margin-bottom: 0.8rem;
+overflow: hidden;
+background: var(--bg-card);
+transition: border-color var(--transition);
+}
+
+.faq-item:hover {
+border-color: rgba(232, 197, 109, 0.15);
+}
+
+.faq-btn {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 1rem 1.2rem;
+cursor: pointer;
+width: 100%;
+background: none;
+border: none;
+color: var(--text-main);
+font: inherit;
+text-align: left;
+font-size: 0.92rem;
+font-weight: 500;
+}
+
+.faq-btn:focus-visible {
+outline: 2px solid var(--primary);
+outline-offset: -2px;
+}
+
+.faq-icon {
+font-size: 1rem;
+color: var(--text-dim);
+transition: transform 0.3s ease;
+flex-shrink: 0;
+margin-left: 1rem;
+}
+
+.faq-answer {
+max-height: 0;
+overflow: hidden;
+padding: 0 1.2rem;
+font-size: 0.9rem;
+color: var(--text-muted);
+transition: max-height 0.4s ease, padding 0.4s ease;
+line-height: 1.7;
+}
+
+.faq-item.open .faq-answer {
+max-height: 400px;
+padding: 0 1.2rem 1rem;
+}
+
+.faq-item.open .faq-icon {
+transform: rotate(45deg);
+}
+
+.faq-sidebar {
+position: sticky;
+top: 100px;
+}
+
+.faq-sidebar-card {
+background: var(--bg-card);
+border: 1px solid var(--border);
+border-radius: var(--radius-lg);
+padding: 2rem;
+}
+
+.faq-sidebar-card h4 {
+font-family: var(--font-display);
+font-size: 1.1rem;
+margin-bottom: 0.8rem;
+}
+
+.faq-sidebar-card p {
+font-size: 0.9rem;
+color: var(--text-muted);
+margin-bottom: 1rem;
+}
+
+/* ============================================
+CONTACT
+============================================ */
+.contact-grid {
+display: grid;
+grid-template-columns: 1.5fr 1fr;
+gap: 3rem;
+align-items: start;
+}
+
+.contact-form-card {
+background: var(--bg-card);
+border: 1px solid var(--border);
+border-radius: var(--radius-lg);
+padding: 2.5rem;
+}
+
+.contact-field {
+margin-bottom: 1.2rem;
+}
+
+.contact-field label {
+display: block;
+font-size: 0.82rem;
+font-weight: 500;
+margin-bottom: 0.4rem;
+color: var(--text-muted);
+letter-spacing: 0.02em;
+}
+
+.contact-field input,
+.contact-field textarea,
+.contact-field select {
+width: 100%;
+border-radius: var(--radius-sm);
+border: 1px solid var(--border);
+padding: 0.8rem 1rem;
+font: inherit;
+font-size: 0.9rem;
+outline: none;
+background: rgba(0, 0, 0, 0.3);
+color: var(--text-main);
+resize: vertical;
+min-height: 46px;
+transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.contact-field textarea { min-height: 130px; }
+
+.contact-field input:focus,
+.contact-field textarea:focus,
+.contact-field select:focus {
+border-color: var(--primary);
+box-shadow: 0 0 0 3px var(--primary-dim);
+}
+
+.contact-field select option {
+background: var(--bg);
+color: var(--text-main);
+}
+
+.ohnohoney {
+position: absolute;
+left: -9999px;
+opacity: 0;
+height: 0;
+width: 0;
+overflow: hidden;
+}
+
+.contact-note {
+margin-top: 0.8rem;
+font-size: 0.85rem;
+color: var(--text-dim);
+}
+
+.contact-note strong {
+color: var(--text-muted);
+}
+
+.form-status {
+margin-top: 1rem;
+font-size: 0.9rem;
+padding: 0.8rem 1rem;
+border-radius: var(--radius-sm);
+display: none;
+}
+
+.form-status.show { display: block; }
+.form-status.success { background: rgba(160,232,197,0.1); color: var(--accent-mint); border: 1px solid rgba(160,232,197,0.2); }
+.form-status.error { background: rgba(232,160,191,0.1); color: var(--accent-rose); border: 1px solid rgba(232,160,191,0.2); }
+.form-status.sending { background: var(--primary-dim); color: var(--primary); border: 1px solid rgba(232,197,109,0.2); }
+
+.contact-aside {
+position: sticky;
+top: 100px;
+}
+
+.mini-profile {
+display: flex;
+align-items: center;
+gap: 0.8rem;
+margin-bottom: 1.2rem;
+}
+
+.mini-avatar {
+width: 56px;
+height: 56px;
+border-radius: 50%;
+overflow: hidden;
+border: 1.5px solid rgba(232, 197, 109, 0.2);
+flex-shrink: 0;
+}
+
+.mini-avatar img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.mini-info strong {
+display: block;
+font-size: 0.95rem;
+}
+
+.mini-info span {
+font-size: 0.82rem;
+color: var(--text-muted);
+}
+
+.contact-aside p {
+font-size: 0.9rem;
+color: var(--text-muted);
+margin-bottom: 0.8rem;
+}
+
+.trust-box {
+background: var(--bg-card);
+border: 1px solid var(--border);
+border-radius: var(--radius-md);
+padding: 1.5rem;
+margin-top: 1.2rem;
+}
+
+.trust-box strong {
+display: block;
+margin-bottom: 0.6rem;
+font-size: 0.9rem;
+}
+
+.trust-box ul li {
+padding-left: 1.2rem;
+position: relative;
+margin-bottom: 0.4rem;
+font-size: 0.85rem;
+color: var(--text-muted);
+}
+
+.trust-box ul li::before {
+content: "✓";
+position: absolute;
+left: 0;
+font-size: 0.75rem;
+color: var(--accent-mint);
+}
+
+.testimonial-block {
+margin-top: 0.8rem;
+}
+
+.testimonial-item {
+padding: 0.8rem 0;
+border-bottom: 1px solid var(--border);
+}
+
+.testimonial-item:last-child {
+border-bottom: none;
+}
+
+.testimonial-item p {
+font-size: 0.88rem;
+font-style: italic;
+color: var(--text-muted);
+margin-bottom: 0.3rem;
+}
+
+.testimonial-item cite {
+font-size: 0.78rem;
+color: var(--primary);
+font-style: normal;
+}
+
+/* ============================================
+FOOTER
+============================================ */
+footer {
+padding: 2rem 0;
+border-top: 1px solid var(--border);
+background: rgba(0, 0, 0, 0.3);
+position: relative;
+z-index: 1;
+}
+
+.footer-inner {
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 2rem;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: center;
+gap: 1rem;
+font-size: 0.82rem;
+color: var(--text-dim);
+}
+
+.footer-inner a {
+transition: color var(--transition);
+}
+
+.footer-inner a:hover {
+color: var(--primary);
+}
+
+.footer-links {
+display: flex;
+gap: 1rem;
+}
+
+/* Back to top */
+#backToTop {
+position: fixed;
+bottom: 2rem;
+right: 2rem;
+width: 44px;
+height: 44px;
+border-radius: 50%;
+background: var(--primary);
+color: var(--bg);
+border: none;
+font-size: 1.1rem;
+cursor: pointer;
+opacity: 0;
+visibility: hidden;
+transition: all var(--transition);
+z-index: 999;
+box-shadow: 0 8px 30px var(--primary-glow);
+}
+
+#backToTop:hover {
+transform: translateY(-3px);
+}
+
+#backToTop.visible {
+opacity: 1;
+visibility: visible;
+}
+
+/* ============================================
+RESPONSIVE
+============================================ */
+@media (max-width: 1040px) {
+.hero-inner { grid-template-columns: 1.2fr 1fr; gap: 3rem; }
+.hero-title { font-size: 3rem; }
+}
+
+@media (max-width: 900px) {
+.services-grid,
+.results-grid,
+.approach-grid { grid-template-columns: repeat(2, 1fr); }
+
+.about-grid { grid-template-columns: 1fr; }
+.about-photo { max-width: 400px; }
+.signature-card { grid-template-columns: 1fr; }
+.faq-grid { grid-template-columns: 1fr; }
+.contact-grid { grid-template-columns: 1fr; }
+
+.faq-sidebar,
+.contact-aside { position: static; }
+}
+
+@media (max-width: 768px) {
+.hamburger { display: flex; }
+
+.nav-links {
+position: fixed;
+top: 0;
+right: -100%;
+width: 280px;
+height: 100vh;
+background: rgba(10, 10, 15, 0.98);
+backdrop-filter: blur(20px);
+flex-direction: column;
+padding: 5rem 2rem 2rem;
+gap: 1.5rem;
+transition: right 0.35s ease;
+border-left: 1px solid var(--border);
+z-index: 1000;
+}
+
+.nav-links.open { right: 0; }
+
+.nav-links a {
+font-size: 1rem;
+display: block;
+}
+
+.hero-inner {
+grid-template-columns: 1fr;
+padding: 3rem 1.5rem;
+text-align: center;
+}
+
+.hero-visual { order: -1; }
+.hero-title { font-size: 2.4rem; }
+.hero-subtitle { margin-left: auto; margin-right: auto; }
+.hero-cta-row { justify-content: center; }
+.hero-note { text-align: center; }
+
+.hero-card { max-width: 320px; }
+
+.float-tag-1 { left: -10px; top: -12px; font-size: 0.72rem; }
+.float-tag-2 { right: -10px; }
+
+.pain-grid { grid-template-columns: 1fr; }
+.stats-inner { flex-direction: column; align-items: center; gap: 0.8rem; }
+.section-title { font-size: 1.8rem; }
+
+section { padding: 80px 0; }
+.container { padding: 0 1.2rem; }
+
+.services-grid,
+.results-grid,
+.approach-grid { grid-template-columns: 1fr; }
+
+.signature-list { grid-template-columns: 1fr; }
+.diagnosis-grid { grid-template-columns: 1fr; }
+
+.bg-particles { display: none; }
+}
+
+@media (max-width: 480px) {
+.hero-title { font-size: 2rem; }
+.hero-card-inner { padding: 1.3rem; }
+.hero-photo-wrapper { width: 180px; height: 180px; }
+.section-title { font-size: 1.5rem; }
+.btn-gold { padding: 0.85rem 1.5rem; font-size: 0.88rem; }
+.btn-ghost { padding: 0.8rem 1.3rem; font-size: 0.85rem; }
+.diagnosis-box { padding: 2rem 1.3rem; }
+.signature-card { padding: 2rem 1.3rem; }
+.cta-banner { padding: 2.5rem 1.5rem; }
+.contact-form-card { padding: 1.5rem; }
+}
+
+@media (max-width: 360px) {
+.hero-title { font-size: 1.7rem; }
+.hero-photo-wrapper { width: 160px; height: 160px; }
+.navbar-inner { padding: 0 1rem; }
+.brand-text { font-size: 0.95rem; }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+*, *::before, *::after {
+animation-duration: 0.01ms !important;
+animation-iteration-count: 1 !important;
+transition-duration: 0.01ms !important;
+}
+.reveal { opacity: 1; transform: none; }
+}
+
+/* Print */
+@media print {
+.navbar, .page-bg, #backToTop, .nav-overlay,
+.hero-visual, .stats-bar { display: none !important; }
+body { background: white !important; color: black !important; }
+section { padding: 20px 0; }
+.glass-card, .service-card, .result-card { box-shadow: none; border: 1px solid #ccc; }
+}
+</style>
+</head>
+
+<body>
+<!-- Skip Navigation -->
+<a href="#main-content" style="position:absolute;left:-9999px;top:0;padding:1rem;background:var(--primary);color:var(--bg);z-index:10000;font-weight:600;" onfocus="this.style.left='0'" onblur="this.style.left='-9999px'">Skip to main content</a>
+
+<!-- ============================================
+ANIMATED BACKGROUND
+============================================ -->
+<div class="page-bg" aria-hidden="true">
+<div class="bg-gradient-1"></div>
+<div class="bg-gradient-2"></div>
+<div class="bg-gradient-3"></div>
+<div class="bg-grid"></div>
+<div class="bg-particles" id="particles"></div>
+</div>
+
+<!-- Nav Overlay -->
+<div class="nav-overlay" id="navOverlay"></div>
+
+<!-- ============================================
+FIXED NAVBAR
+============================================ -->
+<nav class="navbar" id="navbar" aria-label="Main navigation">
+<div class="navbar-inner">
+<a href="#top" class="brand" aria-label="Home">
+<div class="brand-logo">
+<img src="Phoebe D. Breillat.png" alt="Phoebe D. Breillat" width="40" height="40" />
+</div>
+<div class="brand-text">Phoebe D. Breillat</div>
+</a>
+
+<button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+<span></span><span></span><span></span>
+</button>
+
+<div class="nav-links" id="navLinks">
+<a href="#problem">The Problem</a>
+<a href="#approach">Approach</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#results">Results</a>
+<a href="#faq">FAQ</a>
+<a href="#contact" class="nav-cta">Free Assessment</a>
+</div>
+</div>
+</nav>
+
+<!-- ============================================
+HERO
+============================================ -->
+<header class="hero" id="top">
+<div class="hero-inner">
+<div class="hero-text">
+<div class="hero-label">
+<span class="dot"></span>
+Discovery Gap Analysis & Author Visibility
+</div>
+
+<h1 class="hero-title">
+Your book has readers.<br />
+<span class="highlight">They just can't find it yet.</span>
+</h1>
+
+<p class="hero-subtitle">
+I analyze your book's Amazon ranking, category placement, keyword targeting, review patterns, and audience signals to identify exactly why your ideal readers aren't discovering your work — then I build the strategy to fix it.
+</p>
+
+<p class="hero-trust-line">
+<strong>200+</strong> authors across <strong>15+</strong> genres · Data-first · Relationship-centered results
+</p>
+
+<div class="hero-cta-row">
+<a href="#contact" class="btn-gold">Get Your Free Book Assessment</a>
+<a href="#problem" class="btn-ghost">See if this is your problem <span class="arrow">→</span></a>
+</div>
+
+<p class="hero-note">Send me your book link. I'll look at the data before we even talk and tell you what I honestly see.</p>
+</div>
+
+<div class="hero-visual">
+<div class="hero-card">
+<div class="hero-card-glow"></div>
+
+<!-- Float tag positioned OUTSIDE the photo area -->
+<div class="float-tag float-tag-1">✦ 10+ years analyzing book markets</div>
+
+<div class="hero-card-inner">
+<div class="hero-photo-wrapper">
+<img src="Phoebe D. Breillat.png" alt="Phoebe D. Breillat, book marketing specialist" width="320" height="320" />
+</div>
+<div class="hero-card-name">Phoebe D. Breillat</div>
+<div class="hero-card-role">Author Visibility & Book Marketing Specialist</div>
+</div>
+
+<div class="float-tag float-tag-2">I look at your data before we talk</div>
+</div>
+</div>
+</div>
+</header>
+
+<!-- ============================================
+STATS BAR
+============================================ -->
+<div class="stats-bar">
+<div class="stats-inner">
+<div class="stat-item"><strong>200+</strong> authors helped across 15+ genres</div>
+<div class="stat-item"><strong>10+ years</strong> of book market analysis</div>
+<div class="stat-item"><strong>Free assessment</strong> before you commit to anything</div>
+</div>
+</div>
+
+<!-- ============================================
+MAIN CONTENT
+============================================ -->
+<main id="main-content">
+
+<!-- PAIN POINTS -->
+<section id="problem">
+<div class="container">
+<div class="reveal">
+<div class="section-label-center"><span class="section-label">Sound Familiar?</span></div>
+<h2 class="section-title section-title-center">The 8 signs your book has a discovery problem,<br />not a quality problem</h2>
+<p class="section-desc section-desc-center">If even 2–3 of these feel familiar, your book almost certainly has a positioning gap that's blocking readers from finding it.</p>
+</div>
+
+<div class="pain-grid">
+<div class="glass-card pain-card reveal">
+<span class="pain-emoji" aria-hidden="true">📉</span>
+<h4>"My reviews are great but nobody's finding the book"</h4>
+<p>You have a 4.0+ rating. Readers who find it love it. But your BSR is stuck past #500,000 and organic discovery has completely stalled. The quality is there. The visibility infrastructure is not.</p>
+</div>
+<div class="glass-card pain-card reveal">
+<span class="pain-emoji" aria-hidden="true">🔇</span>
+<h4>"I launched and it just... disappeared"</h4>
+<p>You did the launch posts, told your friends, maybe ran a small promo. There was a brief spike, then nothing. Three months later, it feels like the book never existed. That's a launch strategy gap, not a book problem.</p>
+</div>
+<div class="glass-card pain-card reveal">
+<span class="pain-emoji" aria-hidden="true">🎯</span>
+<h4>"I don't know who my readers are or where they gather"</h4>
+<p>You wrote the book, but you can't describe your ideal reader with precision. You don't know which categories they browse, which comp titles they love, or which communities they belong to. Without that map, marketing is just guessing.</p>
+</div>
+<div class="glass-card pain-card reveal">
+<span class="pain-emoji" aria-hidden="true">📂</span>
+<h4>"I think I'm in the wrong categories"</h4>
+<p>Amazon has 16,000+ categories. Being in the wrong 3 means your book is invisible to readers who would love it. This is the single most common fixable problem, and most authors don't even know it's happening.</p>
+</div>
+<div class="glass-card pain-card reveal">
+<span class="pain-emoji" aria-hidden="true">📖</span>
+<h4>"Readers love Book 1 but never buy Book 2"</h4>
+<p>Your series has a read-through leak. Readers finish Book 1 and vanish. The cause is almost always a back-matter funnel gap: no next-book link, no newsletter CTA, or a Book 2 blurb that doesn't hook.</p>
+</div>
+<div class="glass-card pain-card reveal">
+<span class="pain-emoji" aria-hidden="true">👻</span>
+<h4>"I have a backlist that's just sitting there"</h4>
+<p>You published 2, 3, or 5+ books. The early ones have stopped selling entirely. But those books still have value — they just need repositioning, refreshed metadata, and reintroduction to communities that have grown since they launched.</p>
+</div>
+<div class="glass-card pain-card reveal">
+<span class="pain-emoji" aria-hidden="true">😰</span>
+<h4>"Marketing feels overwhelming"</h4>
+<p>You've been told to do newsletters, BookTok, Instagram, blog tours, Amazon ads, Facebook groups, and 47 other things. Nobody told you which of those actually matter for YOUR book in YOUR genre. You need a filter, not more noise.</p>
+</div>
+<div class="glass-card pain-card reveal">
+<span class="pain-emoji" aria-hidden="true">🤷</span>
+<h4>"I'm spending money but can't tell if it's working"</h4>
+<p>You've tried ads, promos, or paid services. Maybe something helped, maybe not. You have no framework to evaluate what moved the needle and what was wasted money. You need a data baseline, not more tactics.</p>
+</div>
+</div>
+
+<div class="reveal" style="text-align: center; margin-top: 3rem;">
+<a href="#contact" class="btn-gold">Get a Free Assessment of Your Book's Data</a>
+<p style="margin-top: 0.8rem; font-size: 0.85rem; color: var(--text-dim);">I'll look at your book's actual signals and tell you exactly what I see. No cost, no obligation.</p>
+</div>
+</div>
+</section>
+
+<!-- WHAT I ANALYZE -->
+<section class="diagnosis-section">
+<div class="container">
+<div class="reveal">
+<div class="diagnosis-box">
+<div class="section-label-center"><span class="section-label">Under The Hood</span></div>
+<h2 class="section-title section-title-center">What I look at when I analyze your book</h2>
+<p class="section-desc section-desc-center" style="margin-bottom: 1.5rem;">Before I make a single recommendation, I examine these real, observable data signals. No guessing. No generic advice.</p>
+
+<div class="diagnosis-grid">
+<div class="diagnosis-item"><strong>Best Sellers Rank</strong>Where you rank overall and in each category, and what the trajectory tells us</div>
+<div class="diagnosis-item"><strong>Category Placement</strong>Whether your 3 categories align with where your actual readers browse</div>
+<div class="diagnosis-item"><strong>Keywords & Search</strong>Whether your backend keywords match what readers type when looking for books like yours</div>
+<div class="diagnosis-item"><strong>Also-Bought Carousel</strong>Whether the books next to yours attract the same readers or send them elsewhere</div>
+<div class="diagnosis-item"><strong>Review Patterns</strong>What readers say, how fast reviews accumulate, and what sentiment signals reveal</div>
+<div class="diagnosis-item"><strong>Pricing Strategy</strong>Whether your price signals the right genre, quality tier, and reader expectations</div>
+<div class="diagnosis-item"><strong>Blurb & Cover Signals</strong>Whether your packaging triggers the genre expectations your ideal readers carry</div>
+<div class="diagnosis-item"><strong>Platform Presence</strong>Your visibility on Amazon, Goodreads, BookBub, and social platforms</div>
+<div class="diagnosis-item"><strong>Series Ecosystem</strong>Read-through rates, back-matter funnels, series entry point optimization</div>
+<div class="diagnosis-item"><strong>Comp Title Landscape</strong>Where similar successful books are positioned and how yours compares</div>
+<div class="diagnosis-item"><strong>Reader Community Mapping</strong>Which book clubs, groups, subreddits, and communities align with your book</div>
+<div class="diagnosis-item"><strong>Metadata Quality</strong>Subtitle, A+ Content, editorial reviews, and every piece of discoverability infrastructure</div>
+</div>
+
+<a href="#contact" class="btn-gold">Send Me Your Book Link for a Free Look</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- APPROACH -->
+<section id="approach">
+<div class="container">
+<div class="reveal">
+<div class="section-label-center"><span class="section-label">How It Works</span></div>
+<h2 class="section-title section-title-center">Six steps from invisible to discoverable</h2>
+<p class="section-desc section-desc-center">Every engagement follows this sequence. Clear, documented, no surprises.</p>
+</div>
+
+<div class="approach-grid">
+<div class="glass-card approach-card reveal">
+<div class="step-num">1</div>
+<h4>You share your book</h4>
+<p>Send me your title, genre, and Amazon link. That's all I need to start. I look at the publicly available data before we even talk.</p>
+</div>
+<div class="glass-card approach-card reveal">
+<div class="step-num">2</div>
+<h4>I analyze the signals</h4>
+<p>BSR trajectory, category placement, keyword alignment, review patterns, also-bought health, pricing, platform presence, and competitive landscape.</p>
+</div>
+<div class="glass-card approach-card reveal">
+<div class="step-num">3</div>
+<h4>I identify the gaps</h4>
+<p>Exactly 3 specific, data-backed discovery or positioning gaps. Not vague observations. Precise signals that show where and why readers can't find your book.</p>
+</div>
+<div class="glass-card approach-card reveal">
+<div class="step-num">4</div>
+<h4>I build the strategy</h4>
+<p>For each gap, a corresponding market move. Exact categories, keywords, pricing adjustments, funnel fixes, and community targets.</p>
+</div>
+<div class="glass-card approach-card reveal">
+<div class="step-num">5</div>
+<h4>You implement with support</h4>
+<p>A written strategy document with prioritized action steps. Email support during implementation. I answer questions as they come up.</p>
+</div>
+<div class="glass-card approach-card reveal">
+<div class="step-num">6</div>
+<h4>We measure and adjust</h4>
+<p>After changes take effect, I review the data again. What moved? What needs refinement? Strategy evolves based on real market response.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="diagnosis-section">
+<div class="container">
+<div class="reveal">
+<span class="section-label">About Phoebe</span>
+<div class="about-grid">
+<div class="about-text">
+<h2 class="section-title">I find the gap between your book and its readers. Then I close it.</h2>
+<p>Most authors don't have a quality problem. They have a discovery problem. Their book sits in the wrong categories, targets keywords nobody searches, has a blurb that doesn't signal the right tropes, or ranks so low that no algorithm will ever surface it organically.</p>
+<p>I started by noticing patterns. Why do some books with 4.5-star ratings and passionate reviews stay invisible while others with weaker content gain momentum? The answer is almost never writing quality. It's positioning, metadata, category alignment, and whether your book appears where your natural readers actually browse.</p>
+<p>Today I combine deep market analysis with reader community intelligence. I look at your BSR trajectory, your also-bought carousel health, your category placement accuracy, your review velocity, your keyword targeting, your pricing strategy, and your platform presence. Then I build a clear, actionable plan that connects the dots.</p>
+
+<div class="about-lists">
+<h4>Genre expertise across 15+ categories</h4>
+<ul>
+<li>Romance (contemporary, historical, fantasy, paranormal, clean, dark)</li>
+<li>Fantasy and science fiction (epic, urban, cozy, LitRPG, progression)</li>
+<li>Thriller, mystery, suspense, and horror</li>
+<li>Literary fiction and book club fiction</li>
+<li>Historical fiction, women's fiction, and family sagas</li>
+<li>Nonfiction (memoir, self-help, business, prescriptive)</li>
+<li>YA and middle grade across subgenres</li>
+</ul>
+</div>
+
+<div class="about-lists">
+<h4>What sets this apart</h4>
+<ul>
+<li>Every recommendation is based on observable data, not opinions</li>
+<li>I look at your book's actual market position before making suggestions</li>
+<li>Strategies are genre-specific, not one-size-fits-all templates</li>
+<li>I tell you what NOT to do as often as what to do</li>
+<li>No fake reviews, no manipulation, no tactics that risk your reputation</li>
+<li>I'm honest about what I can and can't help with</li>
+</ul>
+</div>
+</div>
+
+<div class="about-photo">
+<div class="about-photo-frame">
+<img src="Phoebe D. Breillat.png" alt="Phoebe D. Breillat" loading="lazy" />
+</div>
+<div class="about-photo-accent" aria-hidden="true"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- SIGNATURE SERVICE -->
+<section class="signature-section">
+<div class="container">
+<div class="reveal">
+<div class="section-label-center"><span class="section-label">Signature Service</span></div>
+<div class="signature-card">
+<div>
+<h2 class="section-title">Full Discovery & Positioning Analysis</h2>
+<p class="section-desc">The comprehensive audit that identifies every gap between your book and its natural readers, with a step-by-step strategy to close each one.</p>
+<ul class="signature-list">
+<li>Complete BSR, category, and keyword analysis</li>
+<li>Also-bought carousel audit and audience mapping</li>
+<li>Review sentiment analysis and velocity assessment</li>
+<li>Comp title identification and competitive positioning</li>
+<li>Blurb, cover, and metadata effectiveness evaluation</li>
+<li>Pricing strategy analysis relative to genre norms</li>
+<li>Reader community mapping across platforms</li>
+<li>Platform presence audit (Amazon, Goodreads, BookBub)</li>
+<li>Series read-through analysis (for series authors)</li>
+<li>Written strategy with prioritized action steps</li>
+<li>Email support during implementation</li>
+<li>Follow-up data review after changes take effect</li>
+</ul>
+</div>
+<div class="signature-side">
+<h4>Who this is for</h4>
+<p>Authors who want to understand exactly why their book isn't reaching readers and want a clear, data-backed plan to change that.</p>
+<p>Not generic advice. Specific intelligence about YOUR book in YOUR market.</p>
+<p><strong style="color: var(--primary);">Start with a free assessment.</strong> Send me your book link and I'll tell you what the data shows before you commit to anything.</p>
+<p style="margin-top: 1rem;"><a href="#contact" class="btn-gold" style="display: inline-flex; padding: 0.7rem 1.5rem; font-size: 0.88rem;">Send Your Book Details →</a></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="diagnosis-section">
+<div class="container">
+<div class="reveal">
+<div class="section-label-center"><span class="section-label">Services</span></div>
+<h2 class="section-title section-title-center">Targeted services for specific needs</h2>
+<p class="section-desc section-desc-center">Choose a focused service or combine several. Every engagement is built around your book's actual data and market position.</p>
+</div>
+
+<div class="services-grid">
+<div class="glass-card service-card reveal">
+<div class="service-icon" aria-hidden="true">🔍</div>
+<div class="service-title">Amazon & Metadata Optimization</div>
+<div class="service-tag">Categories • Keywords • Algorithm</div>
+<p class="service-body">Fix the infrastructure that determines whether Amazon's algorithm surfaces your book or buries it.</p>
+<ul class="service-list">
+<li>Category repositioning into high-fit, lower-competition categories</li>
+<li>Keyword research aligned with reader search behavior</li>
+<li>Book description optimization for both algorithm and conversion</li>
+<li>A+ Content strategy and layout</li>
+<li>Backend keyword and BISAC alignment</li>
+</ul>
+</div>
+
+<div class="glass-card service-card reveal">
+<div class="service-icon" aria-hidden="true">📊</div>
+<div class="service-title">Reader Audience Mapping</div>
+<div class="service-tag">Comp titles • Also-boughts • Communities</div>
+<p class="service-body">Identify exactly who your readers are, where they browse, and how to position your book in their path.</p>
+<ul class="service-list">
+<li>Comp title analysis and also-bought carousel mapping</li>
+<li>Reader demographic and psychographic profiling</li>
+<li>Community identification across platforms</li>
+<li>Audience overlap with similar-tier authors</li>
+<li>Genre adjacency and crossover opportunities</li>
+</ul>
+</div>
+
+<div class="glass-card service-card reveal">
+<div class="service-icon" aria-hidden="true">🚀</div>
+<div class="service-title">Launch & Relaunch Strategy</div>
+<div class="service-tag">Pre-launch • Launch • Post-launch</div>
+<p class="service-body">Research-driven launch plans built on market analysis, not generic checklists.</p>
+<ul class="service-list">
+<li>Pre-launch market analysis and positioning</li>
+<li>Category and keyword strategy locked before release</li>
+<li>Review velocity plan and ARC coordination</li>
+<li>Launch week promotional stacking</li>
+<li>Post-launch momentum with measurable checkpoints</li>
+</ul>
+</div>
+
+<div class="glass-card service-card reveal">
+<div class="service-icon" aria-hidden="true">📚</div>
+<div class="service-title">Book Club & Library Pipeline</div>
+<div class="service-tag">Placement • Outreach • Guides</div>
+<p class="service-body">Targeted introductions to reader communities where your book naturally belongs.</p>
+<ul class="service-list">
+<li>Identify aligned clubs, libraries, and communities</li>
+<li>Personalized outreach sequences</li>
+<li>Reading guides and discussion questions</li>
+<li>Library catalog and OverDrive placement support</li>
+<li>Follow-up for sustained engagement</li>
+</ul>
+</div>
+
+<div class="glass-card service-card reveal">
+<div class="service-icon" aria-hidden="true">⭐</div>
+<div class="service-title">Review & Social Proof Strategy</div>
+<div class="service-tag">Velocity • ARCs • Endorsements</div>
+<p class="service-body">Ethical review acceleration that builds genuine social proof.</p>
+<ul class="service-list">
+<li>ARC program design and reader selection</li>
+<li>Reviewer matching by genre and tone</li>
+<li>Review velocity planning for algorithm favor</li>
+<li>Editorial review outreach strategy</li>
+<li>Goodreads and BookBub ecosystem optimization</li>
+</ul>
+</div>
+
+<div class="glass-card service-card reveal">
+<div class="service-icon" aria-hidden="true">📖</div>
+<div class="service-title">Series & Backlist Revival</div>
+<div class="service-tag">Read-through • Funnels • Repositioning</div>
+<p class="service-body">Fix read-through leaks and give older titles a data-informed second life.</p>
+<ul class="service-list">
+<li>Series read-through analysis and funnel optimization</li>
+<li>Back-matter CTA audit and improvement</li>
+<li>Permafree and price pulsing strategy</li>
+<li>Backlist category repositioning</li>
+<li>Reintroduction to updated communities</li>
+</ul>
+</div>
+
+<div class="glass-card service-card reveal">
+<div class="service-icon" aria-hidden="true">✒️</div>
+<div class="service-title">Author Brand & Positioning</div>
+<div class="service-tag">Identity • Messaging • Presence</div>
+<p class="service-body">Clarify who you are as an author so readers and industry professionals instantly understand your work.</p>
+<ul class="service-list">
+<li>Author bios in your natural voice</li>
+<li>Amazon and Goodreads page optimization</li>
+<li>Website content and messaging refinement</li>
+<li>Media kit for press and events</li>
+<li>Consistent platform presence</li>
+</ul>
+</div>
+
+<div class="glass-card service-card reveal">
+<div class="service-icon" aria-hidden="true">💌</div>
+<div class="service-title">Newsletter & Digital Visibility</div>
+<div class="service-tag">Email • Social • Reader magnets</div>
+<p class="service-body">Sustainable online visibility that matches your personality.</p>
+<ul class="service-list">
+<li>Platform selection based on reader location</li>
+<li>Newsletter setup and reader magnet strategy</li>
+<li>Sustainable content rhythm planning</li>
+<li>Cross-promotion and swap opportunities</li>
+<li>BookTok/Bookstagram organic approaches</li>
+</ul>
+</div>
+
+<div class="glass-card service-card reveal">
+<div class="service-icon" aria-hidden="true">🎙️</div>
+<div class="service-title">Publicity & Partnerships</div>
+<div class="service-tag">Podcasts • Events • Collaborations</div>
+<p class="service-body">Strategic appearances that extend your reach while still feeling like you.</p>
+<ul class="service-list">
+<li>Podcast and blog pitch strategy</li>
+<li>Interview preparation and talking points</li>
+<li>Author collaboration opportunities</li>
+<li>Festival and event targeting for your genre</li>
+<li>Library speaking opportunity mapping</li>
+</ul>
+</div>
+</div>
+
+<p class="reveal" style="margin-top: 2rem; text-align: center; font-size: 0.9rem; color: var(--text-dim);">
+Not sure where to start? <a href="#contact" style="color: var(--primary); text-decoration: underline;">Send me your book link</a> and I'll recommend the specific service that matches your situation.
+</p>
+</div>
+</section>
+
+<!-- RESULTS -->
+<section id="results">
+<div class="container">
+<div class="reveal">
+<div class="section-label-center"><span class="section-label">Results</span></div>
+<h2 class="section-title section-title-center">What happens when positioning is corrected</h2>
+<p class="section-desc section-desc-center">Anonymized results from real engagements. The pattern: identify the gap, fix the infrastructure, readers find the book.</p>
+</div>
+
+<div class="results-grid">
+<div class="glass-card result-card reveal">
+<div class="result-genre">Fantasy Romance • Debut</div>
+<div class="result-title">Strong reviews, zero momentum</div>
+<div class="result-before">Before: 4.3 stars, 18 reviews, BSR past #1,000,000. Wrong categories, no keyword overlap with reader searches.</div>
+<div class="result-after">After: Repositioned into fairy tale retelling + clean fantasy romance categories with aligned keywords.</div>
+<div class="result-metrics">
+<span class="result-metric">3 book club selections in 30 days</span>
+<span class="result-metric">Reviews doubled in 6 weeks</span>
+<span class="result-metric">BSR improved 400K+</span>
+</div>
+</div>
+
+<div class="glass-card result-card reveal">
+<div class="result-genre">Gothic Literary Fiction • Backlist</div>
+<div class="result-title">Published 3 years, discovery flatlined</div>
+<div class="result-before">Before: Passionate readers, but also-bought carousel had drifted to unrelated titles. No new discovery.</div>
+<div class="result-after">After: Refreshed categories and keywords, targeted outreach to dark fiction book clubs and librarian networks.</div>
+<div class="result-metrics">
+<span class="result-metric">5 new community discussions</span>
+<span class="result-metric">Renewed library interest</span>
+<span class="result-metric">Backlist sales lift in 8 weeks</span>
+</div>
+</div>
+
+<div class="glass-card result-card reveal">
+<div class="result-genre">Women's Fiction • Uplifting</div>
+<div class="result-title">Good book, wrong metadata signals</div>
+<div class="result-before">Before: Blurb emphasized literary qualities. Readers actually wanted emotional stories about second chances.</div>
+<div class="result-after">After: Realigned blurb, categories, and keywords to match what readers search for and love.</div>
+<div class="result-metrics">
+<span class="result-metric">Newsletter sign-ups 3x</span>
+<span class="result-metric">Engagement sustained 4+ months</span>
+<span class="result-metric">Word-of-mouth restarted</span>
+</div>
+</div>
+
+<div class="glass-card result-card reveal">
+<div class="result-genre">Thriller / Mystery • Series</div>
+<div class="result-title">Book 1 selling, 80% read-through drop</div>
+<div class="result-before">Before: No back-matter links, no newsletter CTA. Book 2 blurb spoiled Book 1.</div>
+<div class="result-after">After: Fixed series funnel, rewrote Book 2 blurb, added proper back-matter threading.</div>
+<div class="result-metrics">
+<span class="result-metric">Read-through: 20% → 52%</span>
+<span class="result-metric">Series revenue nearly tripled</span>
+<span class="result-metric">Book 3 pre-orders exceeded Book 2</span>
+</div>
+</div>
+
+<div class="glass-card result-card reveal">
+<div class="result-genre">Nonfiction / Self-Help</div>
+<div class="result-title">Strong platform, book not converting</div>
+<div class="result-before">Before: 12K email subscribers, 40+ reviews. BSR stuck. Competing in broad categories against major publishers.</div>
+<div class="result-after">After: Moved to specific subcategories, added A+ Content, created reader magnet funnel.</div>
+<div class="result-metrics">
+<span class="result-metric">#1 in two subcategories</span>
+<span class="result-metric">Speaking-to-book conversion up</span>
+<span class="result-metric">Sustained top-100 placement</span>
+</div>
+</div>
+
+<div class="glass-card result-card reveal">
+<div class="result-genre">Historical Fiction • Dual Timeline</div>
+<div class="result-title">Split audience, neither could find it</div>
+<div class="result-before">Before: Reviews split between historical detail lovers and modern family drama fans.</div>
+<div class="result-after">After: Split keyword strategy targeting both reader pools through dual-timeline and family saga categories.</div>
+<div class="result-metrics">
+<span class="result-metric">4 book clubs in 6 weeks</span>
+<span class="result-metric">Goodreads "want to read" doubled</span>
+<span class="result-metric">First library speaking invite</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CTA BANNER -->
+<section class="diagnosis-section">
+<div class="container">
+<div class="reveal">
+<div class="cta-banner">
+<h2 class="section-title section-title-center">Your book deserves the readers who are already searching for it</h2>
+<p>Send me your book link. I'll look at the data and tell you what I honestly see. No cost for the initial assessment. No obligation. Just real observations.</p>
+<a href="#contact" class="btn-gold">Get Your Free Book Assessment</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- GENRES -->
+<section>
+<div class="container">
+<div class="reveal">
+<div class="section-label-center"><span class="section-label">Genres</span></div>
+<h2 class="section-title section-title-center">Deep market knowledge across genres</h2>
+<p class="section-desc section-desc-center">Each genre has different discovery mechanics, reader expectations, and platform dynamics. I apply genre-specific expertise, not generic advice.</p>
+<div class="genres-wrap">
+<span class="genre-tag">Contemporary Romance</span>
+<span class="genre-tag">Historical Romance</span>
+<span class="genre-tag">Fantasy Romance</span>
+<span class="genre-tag">Paranormal Romance</span>
+<span class="genre-tag">Dark Romance</span>
+<span class="genre-tag">Clean Romance</span>
+<span class="genre-tag">Epic Fantasy</span>
+<span class="genre-tag">Urban Fantasy</span>
+<span class="genre-tag">Cozy Fantasy</span>
+<span class="genre-tag">LitRPG</span>
+<span class="genre-tag">Science Fiction</span>
+<span class="genre-tag">Thriller</span>
+<span class="genre-tag">Mystery</span>
+<span class="genre-tag">Suspense</span>
+<span class="genre-tag">Horror</span>
+<span class="genre-tag">Gothic Fiction</span>
+<span class="genre-tag">Literary Fiction</span>
+<span class="genre-tag">Book Club Fiction</span>
+<span class="genre-tag">Historical Fiction</span>
+<span class="genre-tag">Women's Fiction</span>
+<span class="genre-tag">Family Sagas</span>
+<span class="genre-tag">Memoir</span>
+<span class="genre-tag">Self-Help</span>
+<span class="genre-tag">Business</span>
+<span class="genre-tag">Prescriptive Nonfiction</span>
+<span class="genre-tag">YA Fantasy</span>
+<span class="genre-tag">YA Contemporary</span>
+<span class="genre-tag">Middle Grade</span>
+</div>
+</div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="diagnosis-section">
+<div class="container">
+<div class="reveal">
+<div class="section-label-center"><span class="section-label">FAQ</span></div>
+<h2 class="section-title section-title-center">Questions authors ask before reaching out</h2>
+<div class="section-divider"></div>
+</div>
+
+<div class="faq-grid">
+<div class="reveal">
+<div class="faq-item">
+<button class="faq-btn" aria-expanded="false"><span>What's this "free assessment" actually include?</span><span class="faq-icon">+</span></button>
+<div class="faq-answer">I look at your book's publicly available data: BSR, categories, review count, rating, pricing, and basic positioning. I reply with honest initial observations about what I see. If there's a clear discovery gap I can help with, I'll tell you. If there isn't, I'll tell you that too. No pitch, no pressure.</div>
+</div>
+<div class="faq-item">
+<button class="faq-btn" aria-expanded="false"><span>Can you guarantee sales or bestseller status?</span><span class="faq-icon">+</span></button>
+<div class="faq-answer">No. Anyone who guarantees that is not being honest. What I can do is identify exactly where your positioning is blocking discovery and give you a data-backed plan to fix it. Correct positioning dramatically improves the odds, but no one controls algorithms or reader behavior.</div>
+</div>
+<div class="faq-item">
+<button class="faq-btn" aria-expanded="false"><span>How is this different from other book marketing services?</span><span class="faq-icon">+</span></button>
+<div class="faq-answer">Most services start with a template and apply it to every author. I start with your book's actual data. I look at your BSR, categories, keywords, reviews, also-boughts, and competitive landscape before making a single recommendation. Every strategy is built on observable signals specific to your book and genre.</div>
+</div>
+<div class="faq-item">
+<button class="faq-btn" aria-expanded="false"><span>How far in advance should I reach out before launch?</span><span class="faq-icon">+</span></button>
+<div class="faq-answer">Ideally 3-6 months before publication. Category selection, keyword targeting, and review velocity planning all benefit from lead time. If your book is already out, we can still work together. Many of my best results come from repositioning books that launched with weak positioning.</div>
+</div>
+<div class="faq-item">
+<button class="faq-btn" aria-expanded="false"><span>Do you work with self-published and traditionally published?</span><span class="faq-icon">+</span></button>
+<div class="faq-answer">Both. Self-published authors typically have more control over metadata and pricing, meaning faster implementation. Traditionally published authors may need to work through their publisher for some changes, but there's still significant optimization possible on Goodreads, BookBub, social presence, and reader community outreach.</div>
+</div>
+<div class="faq-item">
+<button class="faq-btn" aria-expanded="false"><span>What if I'm introverted and hate self-promotion?</span><span class="faq-icon">+</span></button>
+<div class="faq-answer">Many of my clients are. A significant portion of what I do is infrastructure and positioning work that happens behind the scenes: categories, keywords, metadata, back-matter funnels. You don't need to become a social media personality. We build visibility around your comfort level.</div>
+</div>
+<div class="faq-item">
+<button class="faq-btn" aria-expanded="false"><span>Do you manage Amazon or Facebook ads?</span><span class="faq-icon">+</span></button>
+<div class="faq-answer">My focus is organic discoverability and positioning. I can guide you on when ads make sense and what kind, but I'm not a day-to-day ad manager. Good positioning makes ads work better. Running ads without good positioning is burning money.</div>
+</div>
+<div class="faq-item">
+<button class="faq-btn" aria-expanded="false"><span>How much does it cost?</span><span class="faq-icon">+</span></button>
+<div class="faq-answer">Depends on scope. After the free assessment, I outline options at different levels so you choose what fits. No surprise billing, no hidden fees, no pressure. I'd rather you invest in the right service than oversell you.</div>
+</div>
+<div class="faq-item">
+<button class="faq-btn" aria-expanded="false"><span>What's the difference between you and a publicist?</span><span class="faq-icon">+</span></button>
+<div class="faq-answer">Publicists focus on media: reviews in outlets, interviews, features. I focus on reader discovery infrastructure: categories, keywords, metadata, audience mapping, and community positioning that determine whether readers find your book through search, browse, and algorithms. Both matter. Different problems.</div>
+</div>
+<div class="faq-item">
+<button class="faq-btn" aria-expanded="false"><span>What do you need to get started?</span><span class="faq-icon">+</span></button>
+<div class="faq-answer">Your book title, genre, and Amazon link (if published). That's enough for me to do an initial assessment and tell you whether I can help. If your book isn't published yet, tell me the genre, release date, and what you're hoping to achieve.</div>
+</div>
+</div>
+
+<div class="faq-sidebar reveal">
+<div class="faq-sidebar-card">
+<h4>Still have questions?</h4>
+<p>The fastest way to get answers is to send me your book details. I'll review them and reply with honest observations — including whether I'm the right fit for your situation.</p>
+<a href="#contact" class="btn-gold" style="width: 100%; font-size: 0.88rem; padding: 0.8rem;">Send Your Book Details</a>
+<p style="margin-top: 1rem; font-size: 0.82rem;">Or email me directly at<br /><a href="mailto:dbreillatphoebe@gmail.com" style="color: var(--primary);">dbreillatphoebe@gmail.com</a></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<div class="container">
+<div class="reveal">
+<div class="section-label-center"><span class="section-label">Start Here</span></div>
+<h2 class="section-title section-title-center">Send me your book. I'll tell you what the data shows.</h2>
+<p class="section-desc section-desc-center">Free initial assessment. No obligation. I look at your book's actual signals and reply with honest observations. Every message is personally read and answered by me.</p>
+</div>
+
+<div class="contact-grid">
+<div class="contact-form-card reveal">
+<form id="contactForm" action="https://formspree.io/f/xbdagypa" method="POST" novalidate>
+
+<div class="ohnohoney">
+<label for="website">Website</label>
+<input type="text" id="website" name="_gotcha" tabindex="-1" autocomplete="off" />
+</div>
+
+<div class="contact-field">
+<label for="name">Full name *</label>
+<input id="name" name="full_name" type="text" placeholder="e.g. Jane Arthur" required />
+</div>
+<div class="contact-field">
+<label for="email">Email address *</label>
+<input id="email" name="email" type="email" placeholder="e.g. jane@example.com" required />
+</div>
+<div class="contact-field">
+<label for="book">Book title, genre, and Amazon link (if published)</label>
+<input id="book" name="book_details" type="text" placeholder="e.g. The Stone Horse, historical fiction, amazon.com/dp/..." />
+</div>
+<div class="contact-field">
+<label for="support">What do you need help with? *</label>
+<select id="support" name="support_type" required>
+<option value="" disabled selected>Select one</option>
+<option value="assessment">Free book assessment (just want to know what you see)</option>
+<option value="discovery">Discovery gap analysis & positioning</option>
+<option value="launch">Launch / relaunch strategy</option>
+<option value="metadata">Amazon & metadata optimization</option>
+<option value="audience">Reader audience mapping</option>
+<option value="bookclubs">Book club and library placement</option>
+<option value="reviews">Review strategy & social proof</option>
+<option value="series">Series read-through & backlist</option>
+<option value="full">Full strategy consultation</option>
+<option value="other">Something else</option>
+</select>
+</div>
+<div class="contact-field">
+<label for="timeline">Timeline *</label>
+<select id="timeline" name="timeline" required>
+<option value="" disabled selected>Select one</option>
+<option value="prelaunch">I'm 3–6 months before launch</option>
+<option value="launch">Launching in the next 3 months</option>
+<option value="postlaunch">My book is already out</option>
+<option value="backlist">I want to revive older titles</option>
+<option value="series">Planning a series strategy</option>
+</select>
+</div>
+<div class="contact-field">
+<label for="details">What's going on with your book right now? *</label>
+<textarea id="details" name="message" placeholder="The more specific you are, the more useful my assessment will be. What have you tried? What's working? What's not?" required></textarea>
+</div>
+
+<input type="hidden" name="_subject" value="New author inquiry from website" />
+<button class="btn-gold" type="submit" id="submitBtn" style="width: 100%;">Send for Free Assessment</button>
+
+<p class="contact-note">Prefer email? Write to <strong>dbreillatphoebe@gmail.com</strong> — Subject: <strong>"YES – [Your Book Title]"</strong></p>
+
+<p class="contact-note" style="margin-top: 1rem;">What happens after you hit send:</p>
+<ul style="font-size: 0.82rem; color: var(--text-dim); margin-top: 0.4rem; padding-left: 1rem;">
+<li style="margin-bottom: 0.3rem; list-style: disc;">Your message arrives directly in my inbox. No assistant, no automation.</li>
+<li style="margin-bottom: 0.3rem; list-style: disc;">I look at your book's publicly available data before I respond.</li>
+<li style="margin-bottom: 0.3rem; list-style: disc;">I reply within 48 hours with honest initial observations.</li>
+<li style="margin-bottom: 0.3rem; list-style: disc;">If I can help, I'll explain exactly how. If I can't, I'll say so.</li>
+</ul>
+
+<div id="formStatus" class="form-status" role="status" aria-live="polite"></div>
+</form>
+</div>
+
+<div class="contact-aside reveal">
+<div class="mini-profile">
+<div class="mini-avatar">
+<img src="Phoebe D. Breillat.png" alt="Phoebe D. Breillat" width="56" height="56" loading="lazy" />
+</div>
+<div class="mini-info">
+<strong>Phoebe D. Breillat</strong>
+<span>Author Visibility Specialist</span>
+</div>
+</div>
+
+<p>I'm selective about who I work with because I want to give real attention to every project. The free assessment helps both of us determine if there's a genuine fit.</p>
+<p>I reply to every message within 48 hours, Monday through Friday. You'll get a real, thoughtful response from a human who actually looked at your book.</p>
+
+<div class="trust-box">
+<strong>My commitments</strong>
+<ul>
+<li>No fake reviews, ever</li>
+<li>No rating manipulation</li>
+<li>No spam outreach</li>
+<li>No dishonest promises</li>
+<li>No tactics that risk your reputation</li>
+<li>Full transparency about what I can and can't do</li>
+</ul>
+</div>
+
+<div class="trust-box">
+<strong>What authors say</strong>
+<div class="testimonial-block">
+<div class="testimonial-item">
+<p>"I finally understand WHY my book wasn't being found."</p>
+<cite>— Sarah K., fantasy romance author</cite>
+</div>
+<div class="testimonial-item">
+<p>"She showed me exactly what was wrong with my categories and keywords. I had no idea."</p>
+<cite>— David R., thriller series author</cite>
+</div>
+<div class="testimonial-item">
+<p>"For the first time, I have a plan that actually makes sense for MY book."</p>
+<cite>— Maria L., literary fiction debut</cite>
+</div>
+<div class="testimonial-item">
+<p>"She told me what NOT to waste money on. That alone was worth it."</p>
+<cite>— James T., nonfiction author</cite>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+<div class="footer-inner">
+<div>© <span id="footerYear"></span> Phoebe D. Breillat · Author Visibility & Book Marketing Specialist · <a href="mailto:dbreillatphoebe@gmail.com">dbreillatphoebe@gmail.com</a></div>
+<div class="footer-links">
+<a href="privacy.html">Privacy</a>
+<a href="terms.html">Terms</a>
+</div>
+</div>
+</footer>
+
+<button id="backToTop" aria-label="Back to top">↑</button>
+
+<script>
+// ============================================
+// FOOTER YEAR
+// ============================================
+document.getElementById('footerYear').textContent = new Date().getFullYear();
+
+// ============================================
+// ANIMATED PARTICLES
+// ============================================
+(function createParticles() {
+const container = document.getElementById('particles');
+if (!container) return;
+const count = window.innerWidth < 768 ? 0 : 30;
+for (let i = 0; i < count; i++) {
+const p = document.createElement('div');
+p.className = 'particle';
+p.style.left = Math.random() * 100 + '%';
+p.style.animationDuration = (8 + Math.random() * 15) + 's';
+p.style.animationDelay = (Math.random() * 10) + 's';
+p.style.width = (1 + Math.random() * 2) + 'px';
+p.style.height = p.style.width;
+p.style.opacity = (0.1 + Math.random() * 0.3);
+container.appendChild(p);
+}
+})();
+
+// ============================================
+// NAVBAR SCROLL
+// ============================================
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+navbar.classList.toggle('scrolled', window.scrollY > 20);
+}, { passive: true });
+
+// ============================================
+// MOBILE MENU
+// ============================================
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('navLinks');
+const navOverlay = document.getElementById('navOverlay');
+
+function closeMenu() {
+hamburger.classList.remove('active');
+hamburger.setAttribute('aria-expanded', 'false');
+navLinks.classList.remove('open');
+navOverlay.classList.remove('active');
+document.body.style.overflow = '';
+}
+
+function openMenu() {
+hamburger.classList.add('active');
+hamburger.setAttribute('aria-expanded', 'true');
+navLinks.classList.add('open');
+navOverlay.classList.add('active');
+document.body.style.overflow = 'hidden';
+}
+
+hamburger.addEventListener('click', () => {
+navLinks.classList.contains('open') ? closeMenu() : openMenu();
+});
+
+navOverlay.addEventListener('click', closeMenu);
+navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
+
+document.addEventListener('keydown', e => {
+if (e.key === 'Escape' && navLinks.classList.contains('open')) {
+closeMenu();
+hamburger.focus();
+}
+});
+
+// ============================================
+// SCROLL REVEAL
+// ============================================
+const reveals = document.querySelectorAll('.reveal');
+const revealObserver = new IntersectionObserver((entries, obs) => {
+entries.forEach(entry => {
+if (entry.isIntersecting) {
+entry.target.classList.add('active');
+obs.unobserve(entry.target);
+}
+});
+}, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+reveals.forEach(el => revealObserver.observe(el));
+
+// ============================================
+// FAQ ACCORDION
+// ============================================
+document.querySelectorAll('.faq-item').forEach(item => {
+const btn = item.querySelector('.faq-btn');
+btn.addEventListener('click', () => {
+const isOpen = item.classList.contains('open');
+
+// Close all
+document.querySelectorAll('.faq-item.open').forEach(openItem => {
+if (openItem !== item) {
+openItem.classList.remove('open');
+openItem.querySelector('.faq-btn').setAttribute('aria-expanded', 'false');
+}
+});
+
+item.classList.toggle('open');
+btn.setAttribute('aria-expanded', !isOpen);
+});
+});
+
+// ============================================
+// BACK TO TOP
+// ============================================
+const backToTop = document.getElementById('backToTop');
+window.addEventListener('scroll', () => {
+backToTop.classList.toggle('visible', window.scrollY > 500);
+}, { passive: true });
+
+backToTop.addEventListener('click', () => {
+window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+// ============================================
+// CONTACT FORM
+// ============================================
+const contactForm = document.getElementById('contactForm');
+const formStatus = document.getElementById('formStatus');
+const submitBtn = document.getElementById('submitBtn');
+
+if (contactForm) {
+contactForm.addEventListener('submit', async (e) => {
+e.preventDefault();
+
+// Honeypot check
+const hp = document.getElementById('website');
+if (hp && hp.value) {
+showStatus('success', 'Sent! I\'ll review your book data and reply within 48 hours.');
+contactForm.reset();
+return;
+}
+
+// Validation
+const name = document.getElementById('name').value.trim();
+const email = document.getElementById('email').value.trim();
+const support = document.getElementById('support').value;
+const timeline = document.getElementById('timeline').value;
+const details = document.getElementById('details').value.trim();
+
+if (!name) return showStatus('error', 'Please enter your name.') || document.getElementById('name').focus();
+if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return showStatus('error', 'Please enter a valid email address.') || document.getElementById('email').focus();
+if (!support) return showStatus('error', 'Please select what you need help with.') || document.getElementById('support').focus();
+if (!timeline) return showStatus('error', 'Please select your timeline.') || document.getElementById('timeline').focus();
+if (!details) return showStatus('error', 'Please tell me what\'s going on with your book.') || document.getElementById('details').focus();
+
+// Submit
+submitBtn.disabled = true;
+submitBtn.textContent = 'Sending...';
+showStatus('sending', 'Sending your message...');
+
+try {
+const res = await fetch(contactForm.action, {
+method: 'POST',
+body: new FormData(contactForm),
+headers: { Accept: 'application/json' }
+});
+
+if (res.ok) {
+contactForm.reset();
+showStatus('success', 'Sent! I\'ll review your book data and reply within 48 hours with my honest assessment.');
+} else {
+showStatus('error', 'Something went wrong. Please email me directly at dbreillatphoebe@gmail.com.');
+}
+} catch {
+showStatus('error', 'Network error. Please email me at dbreillatphoebe@gmail.com.');
+} finally {
+submitBtn.disabled = false;
+submitBtn.textContent = 'Send for Free Assessment';
+}
+});
+}
+
+function showStatus(type, msg) {
+formStatus.textContent = msg;
+formStatus.className = 'form-status show ' + type;
+}
+</script>
+</body>
+</html>
