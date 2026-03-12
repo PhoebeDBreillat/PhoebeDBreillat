@@ -108,7 +108,6 @@ ul { list-style: none; }
   color: var(--bg);
 }
 
-/* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -127,7 +126,7 @@ ul { list-style: none; }
 }
 
 /* ============================================
-   ANIMATED BACKGROUND - ENHANCED
+   ANIMATED BACKGROUND
    ============================================ */
 .page-bg {
   position: fixed;
@@ -290,7 +289,7 @@ section {
 }
 
 /* ============================================
-   NAVBAR — ENHANCED
+   NAVBAR
    ============================================ */
 .navbar {
   position: fixed;
@@ -342,6 +341,9 @@ section {
               linear-gradient(135deg, var(--primary), var(--accent-rose)) border-box;
   flex-shrink: 0;
   transition: all var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .brand:hover .brand-logo {
@@ -352,6 +354,18 @@ section {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.brand-logo .fallback-initials {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--primary);
+  display: none;
+}
+
+.brand-logo img.error + .fallback-initials {
+  display: flex;
 }
 
 .brand-text {
@@ -479,7 +493,7 @@ section {
 }
 
 /* ============================================
-   HERO — ENHANCED
+   HERO
    ============================================ */
 .hero {
   min-height: 100vh;
@@ -528,16 +542,6 @@ section {
 @keyframes scaleIn {
   from { opacity: 0; transform: scale(0.85); }
   to { opacity: 1; transform: scale(1); }
-}
-
-@keyframes slideRight {
-  from { opacity: 0; transform: translateX(-40px); }
-  to { opacity: 1; transform: translateX(0); }
-}
-
-@keyframes slideLeft {
-  from { opacity: 0; transform: translateX(40px); }
-  to { opacity: 1; transform: translateX(0); }
 }
 
 @keyframes float {
@@ -716,7 +720,7 @@ section {
   border-left: 2px solid rgba(212, 175, 55, 0.3);
 }
 
-/* Hero Visual — Photo Card Enhanced */
+/* Hero Visual — Photo Card */
 .hero-visual {
   display: flex;
   justify-content: center;
@@ -777,6 +781,10 @@ section {
   overflow: hidden;
   position: relative;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(135deg, var(--primary), var(--accent-rose));
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-photo-wrapper::before {
@@ -796,6 +804,17 @@ section {
   height: 100%;
   object-fit: cover;
   transition: transform 0.8s ease;
+  position: relative;
+  z-index: 0;
+}
+
+.hero-photo-wrapper .photo-fallback {
+  position: absolute;
+  font-family: var(--font-display);
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--bg);
+  z-index: 0;
 }
 
 .hero-card:hover .hero-photo-wrapper img {
@@ -864,7 +883,7 @@ section {
 }
 
 /* ============================================
-   STATS BAR — ENHANCED
+   STATS BAR
    ============================================ */
 .stats-bar {
   border-top: 1px solid var(--border);
@@ -917,7 +936,7 @@ section {
 }
 
 /* ============================================
-   REVEAL ANIMATION — ENHANCED
+   REVEAL ANIMATION
    ============================================ */
 .reveal {
   opacity: 0;
@@ -935,22 +954,8 @@ section {
 .reveal-delay-3 { transition-delay: 0.3s; }
 .reveal-delay-4 { transition-delay: 0.4s; }
 
-/* Stagger children */
-.reveal-stagger > * {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.6s ease;
-}
-
-.reveal-stagger.active > *:nth-child(1) { transition-delay: 0.1s; opacity: 1; transform: translateY(0); }
-.reveal-stagger.active > *:nth-child(2) { transition-delay: 0.2s; opacity: 1; transform: translateY(0); }
-.reveal-stagger.active > *:nth-child(3) { transition-delay: 0.3s; opacity: 1; transform: translateY(0); }
-.reveal-stagger.active > *:nth-child(4) { transition-delay: 0.4s; opacity: 1; transform: translateY(0); }
-.reveal-stagger.active > *:nth-child(5) { transition-delay: 0.5s; opacity: 1; transform: translateY(0); }
-.reveal-stagger.active > *:nth-child(6) { transition-delay: 0.6s; opacity: 1; transform: translateY(0); }
-
 /* ============================================
-   SECTION HEADERS — ENHANCED
+   SECTION HEADERS
    ============================================ */
 .section-label {
   display: inline-flex;
@@ -1007,7 +1012,7 @@ section {
 }
 
 /* ============================================
-   GLASS CARDS — ENHANCED
+   GLASS CARDS
    ============================================ */
 .glass-card {
   background: linear-gradient(160deg, rgba(255,255,255,0.04), rgba(255,255,255,0.01));
@@ -1053,7 +1058,7 @@ section {
 }
 
 /* ============================================
-   PAIN POINTS — ENHANCED
+   PAIN POINTS
    ============================================ */
 .pain-grid {
   display: grid;
@@ -1100,7 +1105,7 @@ section {
 }
 
 /* ============================================
-   DIAGNOSIS BOX — ENHANCED
+   DIAGNOSIS BOX
    ============================================ */
 .diagnosis-section {
   background: linear-gradient(180deg, rgba(212,175,55,0.02), transparent, rgba(212,175,55,0.01));
@@ -1191,7 +1196,7 @@ section {
 }
 
 /* ============================================
-   APPROACH — ENHANCED
+   APPROACH
    ============================================ */
 .approach-grid {
   display: grid;
@@ -1242,7 +1247,7 @@ section {
 }
 
 /* ============================================
-   ABOUT — ENHANCED
+   ABOUT
    ============================================ */
 .about-grid {
   display: grid;
@@ -1325,6 +1330,9 @@ section {
   position: relative;
   box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4);
   transition: all var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .about-photo-frame:hover {
@@ -1340,6 +1348,17 @@ section {
 
 .about-photo-frame:hover img {
   transform: scale(1.05);
+}
+
+.about-photo-frame .photo-fallback {
+  position: absolute;
+  font-family: var(--font-display);
+  font-size: 5rem;
+  font-weight: 700;
+  color: var(--primary);
+  background: linear-gradient(135deg, var(--primary), var(--accent-rose));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .about-photo-accent {
@@ -1367,7 +1386,7 @@ section {
 }
 
 /* ============================================
-   SIGNATURE SERVICE — ENHANCED
+   SIGNATURE SERVICE
    ============================================ */
 .signature-section {
   background: linear-gradient(180deg, transparent, rgba(212,175,55,0.02), transparent);
@@ -1476,7 +1495,7 @@ section {
 }
 
 /* ============================================
-   SERVICES — ENHANCED
+   SERVICES
    ============================================ */
 .services-grid {
   display: grid;
@@ -1557,7 +1576,7 @@ section {
 }
 
 /* ============================================
-   RESULTS — ENHANCED
+   RESULTS
    ============================================ */
 .results-grid {
   display: grid;
@@ -1592,10 +1611,9 @@ section {
   font-size: 0.88rem;
   color: var(--accent-rose);
   margin-bottom: 0.5rem;
-  padding-left: 1rem;
+  padding: 0.6rem 1rem;
   border-left: 2px solid rgba(255, 107, 157, 0.4);
   background: var(--accent-rose-dim);
-  padding: 0.6rem 1rem;
   border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
 }
 
@@ -1603,10 +1621,9 @@ section {
   font-size: 0.88rem;
   color: var(--accent-mint);
   margin-bottom: 1rem;
-  padding-left: 1rem;
+  padding: 0.6rem 1rem;
   border-left: 2px solid rgba(74, 222, 128, 0.4);
   background: var(--accent-mint-dim);
-  padding: 0.6rem 1rem;
   border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
 }
 
@@ -1632,7 +1649,7 @@ section {
 }
 
 /* ============================================
-   CTA BANNER — ENHANCED
+   CTA BANNER
    ============================================ */
 .cta-banner {
   background: linear-gradient(145deg, rgba(212,175,55,0.08), rgba(255,107,157,0.04));
@@ -1677,7 +1694,7 @@ section {
 }
 
 /* ============================================
-   GENRES — ENHANCED
+   GENRES
    ============================================ */
 .genres-wrap {
   display: flex;
@@ -1707,7 +1724,7 @@ section {
 }
 
 /* ============================================
-   FAQ — ENHANCED
+   FAQ
    ============================================ */
 .faq-grid {
   display: grid;
@@ -1829,7 +1846,7 @@ section {
 }
 
 /* ============================================
-   CONTACT — ENHANCED
+   CONTACT
    ============================================ */
 .contact-grid {
   display: grid;
@@ -1977,12 +1994,23 @@ section {
               linear-gradient(135deg, var(--primary), var(--accent-rose)) border-box;
   flex-shrink: 0;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .mini-avatar img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.mini-avatar .avatar-fallback {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary);
+  display: none;
 }
 
 .mini-info strong {
@@ -2064,7 +2092,7 @@ section {
 }
 
 /* ============================================
-   FOOTER — ENHANCED
+   FOOTER
    ============================================ */
 footer {
   padding: 2.5rem 0;
@@ -2100,7 +2128,7 @@ footer {
   gap: 1.5rem;
 }
 
-/* Back to top — Enhanced */
+/* Back to top */
 #backToTop {
   position: fixed;
   bottom: 2rem;
@@ -2122,21 +2150,6 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-#backToTop::before {
-  content: "";
-  position: absolute;
-  inset: -3px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--primary), var(--accent-rose));
-  z-index: -1;
-  opacity: 0;
-  transition: opacity var(--transition);
-}
-
-#backToTop:hover::before {
-  opacity: 1;
 }
 
 #backToTop:hover {
@@ -2342,7 +2355,8 @@ footer {
   <div class="navbar-inner">
     <a href="#top" class="brand" aria-label="Home">
       <div class="brand-logo">
-        <img src="Phoebe D. Breillat.png" alt="Phoebe D. Breillat" width="40" height="40" />
+        <img src="Phoebe%20D.%20Breillat.png" alt="Phoebe D. Breillat" width="40" height="40" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+        <span class="fallback-initials" style="display:none;">PB</span>
       </div>
       <div class="brand-text">Phoebe D. Breillat</div>
     </a>
@@ -2403,7 +2417,8 @@ footer {
 
         <div class="hero-card-inner">
           <div class="hero-photo-wrapper">
-            <img src="Phoebe D. Breillat.png" alt="Phoebe D. Breillat, book marketing specialist" width="320" height="320" />
+            <span class="photo-fallback">PB</span>
+            <img src="Phoebe%20D.%20Breillat.png" alt="Phoebe D. Breillat, book marketing specialist" width="240" height="240" onerror="this.style.display='none';" />
           </div>
           <div class="hero-card-name">Phoebe D. Breillat</div>
           <div class="hero-card-role">Author Visibility & Book Marketing Specialist</div>
@@ -2440,7 +2455,7 @@ footer {
       <p class="section-desc section-desc-center">If even 2–3 of these feel familiar, your book almost certainly has a positioning gap that's blocking readers from finding it.</p>
     </div>
 
-    <div class="pain-grid reveal-stagger">
+    <div class="pain-grid">
       <div class="glass-card pain-card reveal">
         <span class="pain-emoji" aria-hidden="true">📉</span>
         <h4>"My reviews are great but nobody's finding the book"</h4>
@@ -2604,7 +2619,8 @@ footer {
 
         <div class="about-photo">
           <div class="about-photo-frame">
-            <img src="Phoebe D. Breillat.png" alt="Phoebe D. Breillat" loading="lazy" />
+            <span class="photo-fallback">PB</span>
+            <img src="Phoebe%20D.%20Breillat.png" alt="Phoebe D. Breillat" loading="lazy" onerror="this.style.display='none';" />
           </div>
           <div class="about-photo-accent" aria-hidden="true"></div>
           <div class="about-photo-accent-2" aria-hidden="true"></div>
@@ -3079,7 +3095,8 @@ footer {
       <div class="contact-aside reveal">
         <div class="mini-profile">
           <div class="mini-avatar">
-            <img src="Phoebe D. Breillat.png" alt="Phoebe D. Breillat" width="56" height="56" loading="lazy" />
+            <img src="Phoebe%20D.%20Breillat.png" alt="Phoebe D. Breillat" width="56" height="56" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <span class="avatar-fallback" style="display:none; font-family: var(--font-display); font-size: 1.2rem; font-weight: 600; color: var(--primary);">PB</span>
           </div>
           <div class="mini-info">
             <strong>Phoebe D. Breillat</strong>
@@ -3144,19 +3161,15 @@ footer {
 <button id="backToTop" aria-label="Back to top">↑</button>
 
 <script>
-// ============================================
-// FOOTER YEAR
-// ============================================
+// Footer Year
 document.getElementById('footerYear').textContent = new Date().getFullYear();
 
-// ============================================
-// CURSOR GLOW EFFECT
-// ============================================
+// Cursor Glow Effect
 const cursorGlow = document.getElementById('cursorGlow');
 let mouseX = 0, mouseY = 0;
 let glowX = 0, glowY = 0;
 
-if (window.innerWidth > 768) {
+if (window.innerWidth > 768 && cursorGlow) {
   document.addEventListener('mousemove', (e) => {
     mouseX = e.clientX;
     mouseY = e.clientY;
@@ -3177,9 +3190,7 @@ if (window.innerWidth > 768) {
   animateGlow();
 }
 
-// ============================================
-// ANIMATED PARTICLES
-// ============================================
+// Animated Particles
 (function createParticles() {
   const container = document.getElementById('particles');
   if (!container || window.innerWidth < 768) return;
@@ -3198,21 +3209,13 @@ if (window.innerWidth > 768) {
   }
 })();
 
-// ============================================
-// NAVBAR SCROLL
-// ============================================
+// Navbar Scroll
 const navbar = document.getElementById('navbar');
-let lastScroll = 0;
-
 window.addEventListener('scroll', () => {
-  const currentScroll = window.scrollY;
-  navbar.classList.toggle('scrolled', currentScroll > 30);
-  lastScroll = currentScroll;
+  navbar.classList.toggle('scrolled', window.scrollY > 30);
 }, { passive: true });
 
-// ============================================
-// MOBILE MENU
-// ============================================
+// Mobile Menu
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('navLinks');
 const navOverlay = document.getElementById('navOverlay');
@@ -3247,10 +3250,8 @@ document.addEventListener('keydown', e => {
   }
 });
 
-// ============================================
-// SCROLL REVEAL
-// ============================================
-const reveals = document.querySelectorAll('.reveal, .reveal-stagger');
+// Scroll Reveal
+const reveals = document.querySelectorAll('.reveal');
 const revealObserver = new IntersectionObserver((entries, obs) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -3261,30 +3262,23 @@ const revealObserver = new IntersectionObserver((entries, obs) => {
 }, { threshold: 0.06, rootMargin: '0px 0px -60px 0px' });
 reveals.forEach(el => revealObserver.observe(el));
 
-// ============================================
-// FAQ ACCORDION
-// ============================================
+// FAQ Accordion
 document.querySelectorAll('.faq-item').forEach(item => {
   const btn = item.querySelector('.faq-btn');
   btn.addEventListener('click', () => {
     const isOpen = item.classList.contains('open');
-
-    // Close all
     document.querySelectorAll('.faq-item.open').forEach(openItem => {
       if (openItem !== item) {
         openItem.classList.remove('open');
         openItem.querySelector('.faq-btn').setAttribute('aria-expanded', 'false');
       }
     });
-
     item.classList.toggle('open');
     btn.setAttribute('aria-expanded', !isOpen);
   });
 });
 
-// ============================================
-// BACK TO TOP
-// ============================================
+// Back to Top
 const backToTop = document.getElementById('backToTop');
 window.addEventListener('scroll', () => {
   backToTop.classList.toggle('visible', window.scrollY > 600);
@@ -3294,9 +3288,7 @@ backToTop.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-// ============================================
-// SMOOTH SCROLL FOR ANCHOR LINKS
-// ============================================
+// Smooth Scroll for Anchor Links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
     const target = document.querySelector(this.getAttribute('href'));
@@ -3307,9 +3299,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// ============================================
-// CONTACT FORM
-// ============================================
+// Contact Form
 const contactForm = document.getElementById('contactForm');
 const formStatus = document.getElementById('formStatus');
 const submitBtn = document.getElementById('submitBtn');
@@ -3318,8 +3308,10 @@ if (contactForm) {
   contactForm.addEventListener('submit', async (e) => {
     e.preventDefault();
 
-    // Honeypot check
     const hp = document.getElementById('website');
+    if (hp && hp.value) {
+      showStatus('success', 'Sent! I
+                     const hp = document.getElementById('website');
     if (hp && hp.value) {
       showStatus('success', 'Sent! I\'ll review your book data and reply within 48 hours.');
       contactForm.reset();
@@ -3374,13 +3366,11 @@ if (contactForm) {
       if (res.ok) {
         contactForm.reset();
         showStatus('success', 'Sent! I\'ll review your book data and reply within 48 hours with my honest assessment.');
-        
-        // Scroll to success message
         formStatus.scrollIntoView({ behavior: 'smooth', block: 'center' });
       } else {
         showStatus('error', 'Something went wrong. Please email me directly at breillatphoebed@gmail.com.');
       }
-    } catch {
+    } catch (err) {
       showStatus('error', 'Network error. Please email me at breillatphoebed@gmail.com.');
     } finally {
       submitBtn.disabled = false;
@@ -3394,169 +3384,7 @@ function showStatus(type, msg) {
   formStatus.className = 'form-status show ' + type;
 }
 
-// ============================================
-// TYPING EFFECT FOR HERO (OPTIONAL ENHANCEMENT)
-// ============================================
-const heroTitle = document.querySelector('.hero-title .highlight');
-if (heroTitle && window.innerWidth > 768) {
-  const text = heroTitle.textContent;
-  heroTitle.textContent = '';
-  let i = 0;
-  
-  setTimeout(() => {
-    const typeWriter = setInterval(() => {
-      if (i < text.length) {
-        heroTitle.textContent += text.charAt(i);
-        i++;
-      } else {
-        clearInterval(typeWriter);
-      }
-    }, 50);
-  }, 1000);
-}
-
-// ============================================
-// PARALLAX EFFECT FOR BACKGROUND
-// ============================================
-if (window.innerWidth > 768) {
-  const bgGradients = document.querySelectorAll('.bg-gradient-1, .bg-gradient-2, .bg-gradient-3, .bg-gradient-4');
-  
-  window.addEventListener('scroll', () => {
-    const scrollY = window.scrollY;
-    bgGradients.forEach((gradient, index) => {
-      const speed = 0.05 * (index + 1);
-      gradient.style.transform = `translateY(${scrollY * speed}px)`;
-    });
-  }, { passive: true });
-}
-
-// ============================================
-// INTERSECTION OBSERVER FOR STATS COUNTER
-// ============================================
-const statItems = document.querySelectorAll('.stat-item strong');
-let statsAnimated = false;
-
-const statsObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting && !statsAnimated) {
-      statsAnimated = true;
-      animateStats();
-    }
-  });
-}, { threshold: 0.5 });
-
-document.querySelector('.stats-bar') && statsObserver.observe(document.querySelector('.stats-bar'));
-
-function animateStats() {
-  statItems.forEach(stat => {
-    const text = stat.textContent;
-    const match = text.match(/(\d+)/);
-    if (match) {
-      const target = parseInt(match[0]);
-      const suffix = text.replace(match[0], '');
-      let current = 0;
-      const increment = target / 50;
-      const timer = setInterval(() => {
-        current += increment;
-        if (current >= target) {
-          stat.textContent = target + suffix;
-          clearInterval(timer);
-        } else {
-          stat.textContent = Math.floor(current) + suffix;
-        }
-      }, 30);
-    }
-  });
-}
-
-// ============================================
-// PRELOAD CRITICAL IMAGES
-// ============================================
-const criticalImages = ['Phoebe D. Breillat.png'];
-criticalImages.forEach(src => {
-  const img = new Image();
-  img.src = src;
-});
-
-// ============================================
-// SERVICE WORKER REGISTRATION (FOR PWA)
-// ============================================
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    // navigator.serviceWorker.register('/sw.js').catch(() => {});
-  });
-}
-
-// ============================================
-// ACCESSIBILITY: FOCUS TRAP FOR MOBILE MENU
-// ============================================
-const navLinksAll = navLinks.querySelectorAll('a');
-const firstNavLink = navLinksAll[0];
-const lastNavLink = navLinksAll[navLinksAll.length - 1];
-
-navLinks.addEventListener('keydown', (e) => {
-  if (e.key === 'Tab') {
-    if (e.shiftKey && document.activeElement === firstNavLink) {
-      e.preventDefault();
-      hamburger.focus();
-    } else if (!e.shiftKey && document.activeElement === lastNavLink) {
-      e.preventDefault();
-      hamburger.focus();
-    }
-  }
-});
-
-// ============================================
-// LAZY LOADING FOR IMAGES
-// ============================================
-if ('IntersectionObserver' in window) {
-  const lazyImages = document.querySelectorAll('img[loading="lazy"]');
-  const imageObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const img = entry.target;
-        img.src = img.src; // Trigger load
-        imageObserver.unobserve(img);
-      }
-    });
-  });
-  lazyImages.forEach(img => imageObserver.observe(img));
-}
-
-// ============================================
-// PERFORMANCE: DEBOUNCE SCROLL EVENTS
-// ============================================
-function debounce(func, wait) {
-  let timeout;
-  return function executedFunction(...args) {
-    const later = () => {
-      clearTimeout(timeout);
-      func(...args);
-    };
-    clearTimeout(timeout);
-    timeout = setTimeout(later, wait);
-  };
-}
-
-// ============================================
-// EASTER EGG: KONAMI CODE
-// ============================================
-let konamiCode = [];
-const konamiPattern = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
-
-document.addEventListener('keydown', (e) => {
-  konamiCode.push(e.key);
-  konamiCode = konamiCode.slice(-10);
-  
-  if (konamiCode.join('') === konamiPattern.join('')) {
-    document.body.style.transition = 'filter 1s ease';
-    document.body.style.filter = 'hue-rotate(180deg)';
-    setTimeout(() => {
-      document.body.style.filter = 'none';
-    }, 3000);
-  }
-});
-
+// Console Easter Egg
 console.log('%c📚 Looking for author visibility help? You\'re in the right place!', 
   'font-size: 16px; color: #d4af37; font-weight: bold;');
 console.log('%cContact: breillatphoebed@gmail.com', 
@@ -3564,4 +3392,3 @@ console.log('%cContact: breillatphoebed@gmail.com',
 </script>
 </body>
 </html>
-
