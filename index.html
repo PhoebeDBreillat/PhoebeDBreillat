@@ -166,41 +166,14 @@ section {
 }
 
 /* ============================================
-   PROFILE IMAGE WITH FALLBACK
+   PROFILE IMAGES - SIMPLE VERSION
    ============================================ */
 .profile-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
-}
-
-.profile-fallback {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, var(--primary), var(--accent-rose));
-  font-family: var(--font-display);
-  font-weight: 700;
-  color: var(--bg);
-}
-
-.profile-container {
-  position: relative;
-  overflow: hidden;
-}
-
-.profile-container .profile-fallback {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-}
-
-.profile-container .profile-image {
-  position: relative;
-  z-index: 2;
+  border-radius: inherit;
 }
 
 /* ============================================
@@ -251,19 +224,13 @@ section {
   height: 44px;
   border-radius: 50%;
   overflow: hidden;
-  border: 2px solid transparent;
-  background: linear-gradient(var(--bg), var(--bg)) padding-box,
-              linear-gradient(135deg, var(--primary), var(--accent-rose)) border-box;
+  border: 2px solid var(--primary);
   flex-shrink: 0;
   transition: all var(--transition);
 }
 
 .brand:hover .brand-logo {
   box-shadow: 0 0 20px var(--primary-glow);
-}
-
-.brand-logo .profile-fallback {
-  font-size: 1rem;
 }
 
 .brand-text {
@@ -649,22 +616,7 @@ section {
   overflow: hidden;
   position: relative;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
-}
-
-.hero-photo-wrapper::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border: 3px solid transparent;
-  border-radius: 28px;
-  background: linear-gradient(var(--bg-alt), var(--bg-alt)) padding-box,
-              linear-gradient(135deg, var(--primary), var(--accent-rose)) border-box;
-  z-index: 10;
-  pointer-events: none;
-}
-
-.hero-photo-wrapper .profile-fallback {
-  font-size: 5rem;
+  border: 3px solid var(--primary);
 }
 
 .hero-photo-wrapper .profile-image {
@@ -1153,9 +1105,7 @@ section {
 .about-photo-frame {
   border-radius: var(--radius-xl);
   overflow: hidden;
-  border: 2px solid transparent;
-  background: linear-gradient(var(--bg), var(--bg)) padding-box,
-              linear-gradient(135deg, var(--primary), var(--accent-rose)) border-box;
+  border: 3px solid var(--primary);
   aspect-ratio: 4/5;
   position: relative;
   box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4);
@@ -1164,10 +1114,6 @@ section {
 
 .about-photo-frame:hover {
   transform: translateY(-5px) rotate(1deg);
-}
-
-.about-photo-frame .profile-fallback {
-  font-size: 6rem;
 }
 
 .about-photo-frame .profile-image {
@@ -1710,14 +1656,8 @@ section {
   height: 64px;
   border-radius: 50%;
   overflow: hidden;
-  border: 2px solid transparent;
-  background: linear-gradient(var(--bg), var(--bg)) padding-box,
-              linear-gradient(135deg, var(--primary), var(--accent-rose)) border-box;
+  border: 2px solid var(--primary);
   flex-shrink: 0;
-}
-
-.mini-avatar .profile-fallback {
-  font-size: 1.5rem;
 }
 
 .mini-info strong {
@@ -1981,9 +1921,8 @@ footer {
 <nav class="navbar" id="navbar">
   <div class="navbar-inner">
     <a href="#top" class="brand">
-      <div class="brand-logo profile-container">
-        <div class="profile-fallback">PB</div>
-        <img class="profile-image" src="Phoebe D. Breillat.png" alt="Phoebe D. Breillat" width="40" height="40" onerror="this.style.display='none'" />
+      <div class="brand-logo">
+        <img class="profile-image" src="Phoebe D. Breillat.png" alt="Phoebe D. Breillat" width="40" height="40" />
       </div>
       <div class="brand-text">Phoebe D. Breillat</div>
     </a>
@@ -2042,9 +1981,8 @@ footer {
         <div class="float-tag float-tag-1">✦ 10+ years analyzing book markets</div>
 
         <div class="hero-card-inner">
-          <div class="hero-photo-wrapper profile-container">
-            <div class="profile-fallback">PB</div>
-            <img class="profile-image" src="Phoebe D. Breillat.png" alt="Phoebe D. Breillat" width="240" height="240" onerror="this.style.display='none'" />
+          <div class="hero-photo-wrapper">
+            <img class="profile-image" src="Phoebe D. Breillat.png" alt="Phoebe D. Breillat" width="240" height="240" />
           </div>
           <div class="hero-card-name">Phoebe D. Breillat</div>
           <div class="hero-card-role">Author Visibility & Book Marketing Specialist</div>
@@ -2242,9 +2180,8 @@ footer {
         </div>
 
         <div class="about-photo">
-          <div class="about-photo-frame profile-container">
-            <div class="profile-fallback">PB</div>
-            <img class="profile-image" src="Phoebe D. Breillat.png" alt="Phoebe D. Breillat" loading="lazy" onerror="this.style.display='none'" />
+          <div class="about-photo-frame">
+            <img class="profile-image" src="Phoebe D. Breillat.png" alt="Phoebe D. Breillat" loading="lazy" />
           </div>
           <div class="about-photo-accent"></div>
         </div>
@@ -2603,9 +2540,8 @@ footer {
 
       <div class="contact-aside reveal">
         <div class="mini-profile">
-          <div class="mini-avatar profile-container">
-            <div class="profile-fallback">PB</div>
-            <img class="profile-image" src="Phoebe D. Breillat.png" alt="Phoebe D. Breillat" width="56" height="56" loading="lazy" onerror="this.style.display='none'" />
+          <div class="mini-avatar">
+            <img class="profile-image" src="Phoebe D. Breillat.png" alt="Phoebe D. Breillat" width="56" height="56" loading="lazy" />
           </div>
           <div class="mini-info">
             <strong>Phoebe D. Breillat</strong>
@@ -2665,16 +2601,17 @@ footer {
 <button id="backToTop" aria-label="Back to top">↑</button>
 
 <script>
-// Footer Year
 document.getElementById('footerYear').textContent = new Date().getFullYear();
 
-// Navbar Scroll
 const navbar = document.getElementById('navbar');
-window.addEventListener('scroll', () => {
-  navbar.classList.toggle('scrolled', window.scrollY > 30);
+window.addEventListener('scroll', function() {
+  if (window.scrollY > 30) {
+    navbar.classList.add('scrolled');
+  } else {
+    navbar.classList.remove('scrolled');
+  }
 }, { passive: true });
 
-// Mobile Menu
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('navLinks');
 const navOverlay = document.getElementById('navOverlay');
@@ -2695,119 +2632,168 @@ function openMenu() {
   document.body.style.overflow = 'hidden';
 }
 
-hamburger.addEventListener('click', () => {
-  navLinks.classList.contains('open') ? closeMenu() : openMenu();
+hamburger.addEventListener('click', function() {
+  if (navLinks.classList.contains('open')) {
+    closeMenu();
+  } else {
+    openMenu();
+  }
 });
 
 navOverlay.addEventListener('click', closeMenu);
-navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
 
-document.addEventListener('keydown', e => {
+var navLinksAll = navLinks.querySelectorAll('a');
+for (var i = 0; i < navLinksAll.length; i++) {
+  navLinksAll[i].addEventListener('click', closeMenu);
+}
+
+document.addEventListener('keydown', function(e) {
   if (e.key === 'Escape' && navLinks.classList.contains('open')) {
     closeMenu();
     hamburger.focus();
   }
 });
 
-// Scroll Reveal
-const reveals = document.querySelectorAll('.reveal');
-const revealObserver = new IntersectionObserver((entries, obs) => {
-  entries.forEach(entry => {
+var reveals = document.querySelectorAll('.reveal');
+var revealObserver = new IntersectionObserver(function(entries, obs) {
+  entries.forEach(function(entry) {
     if (entry.isIntersecting) {
       entry.target.classList.add('active');
       obs.unobserve(entry.target);
     }
   });
 }, { threshold: 0.06, rootMargin: '0px 0px -60px 0px' });
-reveals.forEach(el => revealObserver.observe(el));
 
-// FAQ Accordion
-document.querySelectorAll('.faq-item').forEach(item => {
-  const btn = item.querySelector('.faq-btn');
-  btn.addEventListener('click', () => {
-    const isOpen = item.classList.contains('open');
-    document.querySelectorAll('.faq-item.open').forEach(openItem => {
-      if (openItem !== item) {
-        openItem.classList.remove('open');
+for (var i = 0; i < reveals.length; i++) {
+  revealObserver.observe(reveals[i]);
+}
+
+var faqItems = document.querySelectorAll('.faq-item');
+for (var i = 0; i < faqItems.length; i++) {
+  var btn = faqItems[i].querySelector('.faq-btn');
+  btn.addEventListener('click', function() {
+    var item = this.parentElement;
+    var wasOpen = item.classList.contains('open');
+    
+    var allItems = document.querySelectorAll('.faq-item.open');
+    for (var j = 0; j < allItems.length; j++) {
+      if (allItems[j] !== item) {
+        allItems[j].classList.remove('open');
       }
-    });
-    item.classList.toggle('open');
+    }
+    
+    if (wasOpen) {
+      item.classList.remove('open');
+    } else {
+      item.classList.add('open');
+    }
   });
-});
+}
 
-// Back to Top
-const backToTop = document.getElementById('backToTop');
-window.addEventListener('scroll', () => {
-  backToTop.classList.toggle('visible', window.scrollY > 600);
+var backToTop = document.getElementById('backToTop');
+window.addEventListener('scroll', function() {
+  if (window.scrollY > 600) {
+    backToTop.classList.add('visible');
+  } else {
+    backToTop.classList.remove('visible');
+  }
 }, { passive: true });
 
-backToTop.addEventListener('click', () => {
+backToTop.addEventListener('click', function() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-// Smooth Scroll
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function(e) {
-    const target = document.querySelector(this.getAttribute('href'));
+var anchors = document.querySelectorAll('a[href^="#"]');
+for (var i = 0; i < anchors.length; i++) {
+  anchors[i].addEventListener('click', function(e) {
+    var href = this.getAttribute('href');
+    var target = document.querySelector(href);
     if (target) {
       e.preventDefault();
       target.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   });
-});
+}
 
-// Contact Form
-const contactForm = document.getElementById('contactForm');
-const formStatus = document.getElementById('formStatus');
-const submitBtn = document.getElementById('submitBtn');
+var contactForm = document.getElementById('contactForm');
+var formStatus = document.getElementById('formStatus');
+var submitBtn = document.getElementById('submitBtn');
 
 if (contactForm) {
-  contactForm.addEventListener('submit', async (e) => {
+  contactForm.addEventListener('submit', function(e) {
     e.preventDefault();
 
-    const hp = document.getElementById('website');
+    var hp = document.getElementById('website');
     if (hp && hp.value) {
       showStatus('success', 'Sent! I\'ll review your book data and reply within 48 hours.');
       contactForm.reset();
       return;
     }
 
-    const name = document.getElementById('name').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const support = document.getElementById('support').value;
-    const timeline = document.getElementById('timeline').value;
-    const details = document.getElementById('details').value.trim();
+    var name = document.getElementById('name').value.trim();
+    var email = document.getElementById('email').value.trim();
+    var support = document.getElementById('support').value;
+    var timeline = document.getElementById('timeline').value;
+    var details = document.getElementById('details').value.trim();
 
-    if (!name) { showStatus('error', 'Please enter your name.'); document.getElementById('name').focus(); return; }
-    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { showStatus('error', 'Please enter a valid email address.'); document.getElementById('email').focus(); return; }
-    if (!support) { showStatus('error', 'Please select what you need help with.'); document.getElementById('support').focus(); return; }
-    if (!timeline) { showStatus('error', 'Please select your timeline.'); document.getElementById('timeline').focus(); return; }
-    if (!details) { showStatus('error', 'Please tell me about your book.'); document.getElementById('details').focus(); return; }
+    if (!name) { 
+      showStatus('error', 'Please enter your name.'); 
+      document.getElementById('name').focus(); 
+      return; 
+    }
+    
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!email || !emailRegex.test(email)) { 
+      showStatus('error', 'Please enter a valid email address.'); 
+      document.getElementById('email').focus(); 
+      return; 
+    }
+    
+    if (!support) { 
+      showStatus('error', 'Please select what you need help with.'); 
+      document.getElementById('support').focus(); 
+      return; 
+    }
+    
+    if (!timeline) { 
+      showStatus('error', 'Please select your timeline.'); 
+      document.getElementById('timeline').focus(); 
+      return; 
+    }
+    
+    if (!details) { 
+      showStatus('error', 'Please tell me about your book.'); 
+      document.getElementById('details').focus(); 
+      return; 
+    }
 
     submitBtn.disabled = true;
     submitBtn.textContent = 'Sending...';
     showStatus('sending', 'Sending your message...');
 
-    try {
-      const res = await fetch(contactForm.action, {
-        method: 'POST',
-        body: new FormData(contactForm),
-        headers: { Accept: 'application/json' }
-      });
-
-      if (res.ok) {
+    var formData = new FormData(contactForm);
+    
+    fetch(contactForm.action, {
+      method: 'POST',
+      body: formData,
+      headers: { 'Accept': 'application/json' }
+    })
+    .then(function(response) {
+      if (response.ok) {
         contactForm.reset();
         showStatus('success', 'Sent! I\'ll review your book data and reply within 48 hours with my honest assessment.');
         formStatus.scrollIntoView({ behavior: 'smooth', block: 'center' });
       } else {
         showStatus('error', 'Something went wrong. Please email me directly at breillatphoebed@gmail.com');
       }
-    } catch (err) {
+    })
+    .catch(function(error) {
       showStatus('error', 'Network error. Please email me at breillatphoebed@gmail.com');
-    } finally {
+    })
+    .finally(function() {
       submitBtn.disabled = false;
       submitBtn.textContent = 'Send for Free Assessment';
-    }
+    });
   });
 }
 
